@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-csv-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/derby.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/miglayout15-swing.jar"/>
+	<classpathentry kind="lib" path="lib/mssql-jdbc-6.4.0.jre9.jar"/>
+	<classpathentry kind="lib" path="out/Books_lib/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="out/Books_lib/commons-csv-1.5.jar"/>
+	<classpathentry kind="lib" path="out/Books_lib/log4j-api-2.10.0.jar"/>
+	<classpathentry kind="lib" path="out/Books_lib/log4j-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="out/Books.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

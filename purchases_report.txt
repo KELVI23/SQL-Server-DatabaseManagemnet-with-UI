@@ -1,0 +1,105 @@
+
+Purchases Report
+-------------------------------------------------------------------------------------------------------------------
+Name                     Title                                                                            Price   
+-------------------------------------------------------------------------------------------------------------------
+Leonard Acosta           Bridge to Terabithia                                                             $6.02
+Ivy Dunn                 �?нна Каренина                                                        $0.83
+Uma Garrison             Die Verwandlung                                                                  $7.31
+Zephr Dean               The City of Ember                                                                $7.98
+Montana Carr             The Chronicles of Narnia                                                         $4.89
+Zia Hansen               One Flew Over the Cuckoo's Nest                                                  $9.82
+Ariana Delaney           A Feast for Crows                                                                $3.59
+Zephr Dean               Divine Secrets of the Ya-Ya Sisterhood                                           $7.22
+Nash Hardin              City of Ashes                                                                    $4.33
+Fuller Whitley           The Eye of the World                                                             $2.02
+Trevor Salinas           The Sun Also Rises                                                               $2.88
+Cleo Lara                The Martian                                                                      $8.13
+Reese Sampson            Bel Canto                                                                        $0.88
+Maggie Atkinson          Winnie-the-Pooh                                                                  $3.38
+Zephr Dean               A Brief History of Time: From the Big Bang to Black Holes                        $4.39
+Jane Contreras           The Ocean at the End of the Lane                                                 $8.07
+Patrick Snider           The 7 Habits of Highly Effective People                                          $1.24
+Serena Wiley             The Stand                                                                        $7.78
+Kareem Robertson         The Immortal Life of Henrietta Lacks                                             $6.40
+Leonard Acosta           Northanger Abbey                                                                 $9.13
+Malcolm Henry            Mistborn : The Final Empire                                                      $7.18
+Adrian Haley             Stranger in a Strange Land                                                       $2.55
+Zia Hansen               A Walk in the Woods                                                              $3.01
+Hakeem Shaffer           Twilight                                                                         $4.12
+Len Wood                 The Ultimate Hitchhiker's Guide: Five Complete Novels and One Story              $8.29
+Audra Whitley            Stargirl                                                                         $6.16
+Thor Clarke              Into the Wild                                                                    $9.86
+Shelley Kidd             The Thorn Birds                                                                  $5.59
+Abbot Stanley            Brisingr                                                                         $7.09
+Josiah Mccoy             If You Give a Mouse a Cookie                                                     $2.69
+Trevor Salinas           The Tragedy of Macbeth                                                           $9.36
+Lucy Hodges              Matilda                                                                          $5.95
+Uma Garrison             Never Let Me Go                                                                  $3.87
+Jane Contreras           Lord of the Flies                                                                $9.17
+Fuller Whitley           A Streetcar Named Desire                                                         $8.98
+Kerry Kramer             Oh, the Places You'll Go!                                                        $5.79
+Roary Haney              Les Misérables                                                                  $1.13
+Montana Carr             The Tell-Tale Heart                                                              $6.85
+Leonard Acosta           Catching Fire                                                                    $6.33
+Kenyon Cherry            A Confederacy of Dunces                                                          $0.94
+Fritz Snider             The Cuckoo's Calling                                                             $0.14
+Uma Garrison             Wicked: The Life and Times of the Wicked Witch of the West                       $8.93
+Akeem Clements           The Nightingale                                                                  $4.18
+Malcolm Henry            Their Eyes Were Watching God                                                     $4.63
+Len Wood                 Of Mice and Men                                                                  $9.72
+Imogene Jimenez          The Host                                                                         $2.83
+Jerome Hendrix           Wonder                                                                           $0.04
+Rhonda Oconnor           Lolita                                                                           $7.83
+Hakeem Shaffer           …trotzdem Ja zum Leben sagen: Ein Psychologe erlebt das Konzentrationslager    $3.03
+Nerea Meyers             The Bell Jar                                                                     $7.77
+Lila Anthony             Of Mice and Men                                                                  $1.79
+Audra Whitley            In Cold Blood                                                                    $0.99
+Autumn Estrada           Nineteen Minutes                                                                 $1.56
+Ferris Reese             Breaking Dawn                                                                    $6.25
+George Caldwell          The Wise Man's Fear                                                              $1.36
+Ciara Merritt            The Pact                                                                         $5.68
+Fuller Whitley           Alice in Wonderland                                                              $1.21
+Althea Clay              Prince Caspian: The Return to Narnia                                             $6.34
+Fritz Snider             A Midsummer Night's Dream                                                        $7.57
+Nathan Golden            The Curious Incident of the Dog in the Night-Time                                $2.71
+Montana Carr             Im Westen nichts Neues                                                           $6.08
+Bradley Prince           Wild: From Lost to Found on the Pacific Crest Trail                              $1.36
+Uma Garrison             Breaking Dawn                                                                    $4.80
+Zia Hansen               The Crucible                                                                     $3.13
+Fritz Snider             The Road                                                                         $6.40
+Althea Clay              The Red Pyramid                                                                  $1.35
+Karyn Irwin              The Return of the King                                                           $1.70
+Iola Arnold              The Night Circus                                                                 $2.54
+Shelley Kidd             The Grapes of Wrath                                                              $8.30
+Talon Dale               A Dance with Dragons                                                             $6.32
+Uma Garrison             Holes                                                                            $4.01
+Jescie Mcbride           The Host                                                                         $2.15
+Ferris Reese             Les Misérables                                                                  $4.57
+Montana Carr             She's Come Undone                                                                $7.14
+Xanthus Barnes           …trotzdem Ja zum Leben sagen: Ein Psychologe erlebt das Konzentrationslager    $2.98
+Fulton Merritt           Pet Sematary                                                                     $5.67
+Kirestin Gill            Orphan Train                                                                     $0.51
+Adam Mccullough          It                                                                               $1.81
+George Caldwell          Salem's Lot                                                                      $5.91
+Kareem Robertson         Ender's Game                                                                     $1.55
+Abbot Stanley            The Undomestic Goddess                                                           $2.46
+Wing Richardson          The Elite                                                                        $1.83
+Quentin Strickland       Illiad                                                                           $0.85
+Kaitlin Oneil            Les Misérables                                                                  $0.49
+Ciara Merritt            Who Moved My Cheese?                                                             $7.96
+Trevor Salinas           Dress Your Family in Corduroy and Denim                                          $8.06
+Wallace Estrada          Can You Keep a Secret?                                                           $2.40
+Nehru Donovan            Treasure Island                                                                  $4.42
+Zia Hansen               Ender's Game                                                                     $0.54
+Lane Kidd                The Colour of Magic                                                              $2.50
+Montana Carr             My Sister's Keeper                                                               $8.53
+Lane Kidd                Пре�?тупление и наказание                                   $9.66
+Patrick Snider           The Lion, the Witch and the Wardrobe                                             $3.64
+Marvin Cantrell          Into Thin Air: A Personal Account of the Mt. Everest Disaster                    $7.43
+Imogene Jimenez          The Client                                                                       $6.68
+Audra Whitley            Yes Please                                                                       $7.41
+Montana Carr             The Bell Jar                                                                     $6.14
+Chase Ball               Siddhartha                                                                       $2.47
+Alice Patrick            La sombra del viento                                                             $0.06
+Thor Clarke              The Goldfinch                                                                    $9.81

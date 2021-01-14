@@ -1,0 +1,504 @@
+
+Books Report
+----------------------------------------------------------------------------------
+ID       ISBN         Authors                                  Title                                    Year Rating Ratings Count Image URL                                                   
+----------------------------------------------------------------------------------
+00000001 439023483    Suzanne Collins                          The Hunger Games                         2008  4.340       4780653 https://images.gr-assets.com/books/1447303603m/2767052.jpg  
+00000002 439554934    J.K. Rowling, Mary GrandPré             Harry Potter and the Philosopher's Stone 1997  4.440       4602479 https://images.gr-assets.com/books/1474154022m/3.jpg        
+00000003 316015849    Stephenie Meyer                          Twilight                                 2005  3.570       3866839 https://images.gr-assets.com/books/1361039443m/41865.jpg    
+00000004 61120081     Harper Lee                               To Kill a Mockingbird                    1960  4.250       3198671 https://images.gr-assets.com/books/1361975680m/2657.jpg     
+00000005 743273567    F. Scott Fitzgerald                      The Great Gatsby                         1925  3.890       2683664 https://images.gr-assets.com/books/1490528560m/4671.jpg     
+00000006 525478817    John Green                               The Fault in Our Stars                   2012  4.260       2346404 https://images.gr-assets.com/books/1360206420m/11870085.jpg 
+00000007 618260307    J.R.R. Tolkien                           The Hobbit or There and Back Again       1937  4.250       2071616 https://images.gr-assets.com/books/1372847500m/5907.jpg     
+00000008 316769177    J.D. Salinger                            The Catcher in the Rye                   1951  3.790       2044241 https://images.gr-assets.com/books/1398034300m/5107.jpg     
+00000009 1416524797   Dan Brown                                Angels & Demons                          2000  3.850       2001311 https://images.gr-assets.com/books/1303390735m/960.jpg      
+00000010 679783261    Jane Austen                              Pride and Prejudice                      1813  4.240       2035490 https://images.gr-assets.com/books/1320399351m/1885.jpg     
+00000011 1594480001   Khaled Hosseini                          The Kite Runner                          2003  4.260       1813044 https://images.gr-assets.com/books/1484565687m/77203.jpg    
+00000012 62024035     Veronica Roth                            Divergent                                2011  4.240       1903563 https://images.gr-assets.com/books/1328559506m/13335037.jpg 
+00000013 451524934    George Orwell, Erich Fromm, Celâl Ü... Nineteen Eighty-Four                     1949  4.140       1956832 https://images.gr-assets.com/books/1348990566m/5470.jpg     
+00000014 452284244    George Orwell                            Animal Farm: A Fairy Story               1945  3.870       1881700 https://images.gr-assets.com/books/1424037542m/7613.jpg     
+00000015 553296981    Anne Frank, Eleanor Roosevelt, B.M. M... Het Achterhuis: Dagboekbrieven 14 jun... 1947  4.100       1972666 https://images.gr-assets.com/books/1358276407m/48855.jpg    
+00000016 307269752    Stieg Larsson, Reg Keeland               Män som hatar kvinnor                   2005  4.110       1808403 https://images.gr-assets.com/books/1327868566m/2429135.jpg  
+00000017 439023491    Suzanne Collins                          Catching Fire                            2009  4.300       1831039 https://images.gr-assets.com/books/1358273780m/6148028.jpg  
+00000018 043965548X   J.K. Rowling, Mary GrandPré, Rufus Beck Harry Potter and the Prisoner of Azkaban 1999  4.530       1832823 https://images.gr-assets.com/books/1499277281m/5.jpg        
+00000019 618346252    J.R.R. Tolkien                            The Fellowship of the Ring              1954  4.340       1766803 https://images.gr-assets.com/books/1298411339m/34.jpg       
+00000020 439023513    Suzanne Collins                          Mockingjay                               2010  4.030       1719760 https://images.gr-assets.com/books/1358275419m/7260188.jpg  
+00000021 439358078    J.K. Rowling, Mary GrandPré             Harry Potter and the Order of the Pho... 2003  4.460       1735368 https://images.gr-assets.com/books/1387141547m/2.jpg        
+00000022 316166685    Alice Sebold                             The Lovely Bones                         2002  3.770       1605173 https://images.gr-assets.com/books/1457810586m/12232938.jpg 
+00000023 439064864    J.K. Rowling, Mary GrandPré             Harry Potter and the Chamber of Secrets  1998  4.370       1779331 https://images.gr-assets.com/books/1474169725m/15881.jpg    
+00000024 439139600    J.K. Rowling, Mary GrandPré             Harry Potter and the Goblet of Fire      2000  4.530       1753043 https://images.gr-assets.com/books/1361482611m/6.jpg        
+00000025 545010225    J.K. Rowling, Mary GrandPré             Harry Potter and the Deathly Hallows     2007  4.610       1746574 https://images.gr-assets.com/books/1474171184m/136251.jpg   
+00000026 307277674    Dan Brown                                The Da Vinci Code                        2003  3.790       1447148 https://images.gr-assets.com/books/1303252999m/968.jpg      
+00000027 439785960    J.K. Rowling, Mary GrandPré             Harry Potter and the Half-Blood Prince   2005  4.540       1678823 https://images.gr-assets.com/books/1361039191m/1.jpg        
+00000028 140283331    William Golding                          Lord of the Flies                        1954  3.640       1605019 https://images.gr-assets.com/books/1327869409m/7624.jpg     
+00000029 743477111    William Shakespeare, Robert          ... An Excellent conceited Tragedie of Ro... 1595  3.730       1628519 https://images.gr-assets.com/books/1327872146m/18135.jpg    
+00000030 297859382    Gillian Flynn                            Gone Girl                                2012  4.030        512475 https://images.gr-assets.com/books/1339602131m/8442457.jpg  
+00000031 399155341    Kathryn Stockett                         The Help                                 2009  4.450       1531753 https://images.gr-assets.com/books/1346100365m/4667024.jpg  
+00000032 142000671    John Steinbeck                           Of Mice and Men                          1937  3.840       1467496 https://images.gr-assets.com/books/1437235233m/890.jpg      
+00000033 739326228    Arthur Golden                            Memoirs of a Geisha                      1997  4.080       1300209 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000034 1612130291   E.L. James                               Fifty Shades of Grey                     2011  3.670       1338493 https://images.gr-assets.com/books/1385207843m/10818853.jpg 
+00000035 61122416     Paulo Coelho, Alan R. Clarke             O Alquimista                             1988  3.820       1299566 https://images.gr-assets.com/books/1483412266m/865.jpg      
+00000036 385732554    Lois Lowry                               The Giver                                1993  4.120       1296825 https://images.gr-assets.com/books/1342493368m/3636.jpg     
+00000037 60764899     C.S. Lewis                               The Lion, the Witch and the Wardrobe     1950  4.190       1531800 https://images.gr-assets.com/books/1353029077m/100915.jpg   
+00000038 965818675    Audrey Niffenegger                       The Time Traveler's Wife                 2003  3.950        746287 https://images.gr-assets.com/books/1437728815m/14050.jpg    
+00000039 553588486    George R.R. Martin                       A Game of Thrones                        1996  4.450       1319204 https://images.gr-assets.com/books/1436732693m/13496.jpg    
+00000040 143038419    Elizabeth Gilbert                        Eat, pray, love: one woman's search f... 2006  3.510       1181647 https://images.gr-assets.com/books/1503066414m/19501.jpg    
+00000041 786838655    Rick Riordan                             The Lightning Thief                      2005  4.230       1366265 https://images.gr-assets.com/books/1400602609m/28187.jpg    
+00000042 451529308    Louisa May Alcott                        Little Women                             1868  4.040       1257121 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000043 142437204    Charlotte Brontë, Michael Mason         Jane Eyre                                1847  4.100       1198557 https://images.gr-assets.com/books/1327867269m/10210.jpg    
+00000044 553816713    Nicholas Sparks                          The Notebook                             1996  4.060       1053403 https://images.gr-assets.com/books/1385738917m/15931.jpg    
+00000045 770430074    Yann Martel                              Life of Pi                               2001  3.880       1003228 https://images.gr-assets.com/books/1320562005m/4214.jpg     
+00000046 1565125606   Sara Gruen                               Water for Elephants                      2006  4.070       1068146 https://images.gr-assets.com/books/1494428973m/43641.jpg    
+00000047 375831002    Markus Zusak                             The Book Thief                           2005  4.360       1159741 https://images.gr-assets.com/books/1390053681m/19063.jpg    
+00000048 307347974    Ray Bradbury                             Fahrenheit 451                           1953  3.970        570498 https://images.gr-assets.com/books/1351643740m/4381.jpg     
+00000049 316160199    Stephenie Meyer                          New Moon (Twilight, #2)                  2006  3.520       1149630 https://images.gr-assets.com/books/1361039440m/49041.jpg    
+00000050 60513039     Shel Silverstein                         Where the Sidewalk Ends: The Poems an... 1974  4.290       1016888 https://images.gr-assets.com/books/1168052448m/30119.jpg    
+00000051 1416914285   Cassandra Clare                          City of Bones                            2007  4.120       1154031 https://images.gr-assets.com/books/1432730315m/256683.jpg   
+00000052 316160202    Stephenie Meyer                          Eclipse                                  2007  3.690       1134511 https://images.gr-assets.com/books/1361038355m/428263.jpg   
+00000053 375826696    Christopher Paolini                      Eragon                                   2002  3.860       1104021 https://images.gr-assets.com/books/1366212852m/113436.jpg   
+00000054 345391802    Douglas Adams                            The Hitchhiker's Guide to the Galaxy     1979  4.200        936782 https://images.gr-assets.com/books/1327656754m/11.jpg       
+00000055 60929871     Aldous Huxley                            Brave New World                          1932  3.970       1022601 https://images.gr-assets.com/books/1487389574m/5129.jpg     
+00000056 031606792X   Stephenie Meyer                          Breaking Dawn                            2008  3.700       1070245 https://images.gr-assets.com/books/1361039438m/1162543.jpg  
+00000057 142001740    Sue Monk Kidd                            The Secret Life of Bees                  2001  4.010        916189 https://images.gr-assets.com/books/1473454532m/37435.jpg    
+00000058 142437174    Mark Twain, John Seelye, Guy Cardwell    The Adventures of Huckleberry Finn       1884  3.800        953758 https://images.gr-assets.com/books/1405973850m/2956.jpg     
+00000059 64410935     E.B. White, Garth Williams, Rosemary ... Charlotte's Web                          1952  4.150       1064521 https://images.gr-assets.com/books/1439632243m/24178.jpg    
+00000060 1400032717   Mark Haddon                              The Curious Incident of the Dog in th... 2003  3.850        867553 https://images.gr-assets.com/books/1479863624m/1618.jpg     
+00000061 1594633665   Paula Hawkins                            The Girl on the Train                    2015  3.880       1008778 https://images.gr-assets.com/books/1490903702m/22557272.jpg 
+00000062 679879242    Philip Pullman                           Northern Lights                          1995  3.940        953970 https://images.gr-assets.com/books/1451271747m/119322.jpg   
+00000063 393978893    Emily Brontë, Richard J. Dunn           Wuthering Heights                        1847  3.820        899195 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000064 743454537    Jodi Picoult                             My Sister's Keeper                       2004  4.060        863879 https://images.gr-assets.com/books/1369504683m/10917.jpg    
+00000065 385333846    Kurt Vonnegut Jr.                        Slaughterhouse-Five, or The Children'... 1969  4.060        846488 https://images.gr-assets.com/books/1440319389m/4981.jpg     
+00000066 446675539    Margaret Mitchell                        Gone with the Wind                       1936  4.280        873981 https://images.gr-assets.com/books/1328025229m/18405.jpg    
+00000067 1594489505   Khaled Hosseini                          A Thousand Splendid Suns                 2007  4.340        818742 https://images.gr-assets.com/books/1345958969m/128029.jpg   
+00000068 671027344    Stephen Chbosky                          The Perks of Being a Wallflower          1999  4.210        888806 https://images.gr-assets.com/books/1167352178m/22628.jpg    
+00000069 7442912      Veronica Roth                            Insurgent                                2012  4.070        836362 https://images.gr-assets.com/books/1325667729m/11735983.jpg 
+00000070 812550706    Orson Scott Card                         Ender's Game                             1985  4.300        813439 https://images.gr-assets.com/books/1408303130m/375802.jpg   
+00000071 141439475    Mary Wollstonecraft Shelley, Percy By... Frankenstein; or, The Modern Prometheus  1818  3.750        808589 https://images.gr-assets.com/books/1381512375m/18490.jpg    
+00000072 450040186    Stephen King                             The Shining                              1977  4.170        791850 https://images.gr-assets.com/books/1353277730m/11588.jpg    
+00000073 316068047    Stephenie Meyer                          The Host                                 2008  3.840        749780 https://images.gr-assets.com/books/1318009171m/1656001.jpg  
+00000074 142402516    John Green                               Looking for Alaska                       2005  4.090        783470 https://images.gr-assets.com/books/1394798630m/99561.jpg    
+00000075 014028009X   Helen Fielding                                                                    1996  3.750        736498 https://images.gr-assets.com/books/1292060045m/227443.jpg   
+00000076 141439661    Jane Austen, Tony Tanner, Ros Ballaster  Sense and Sensibility                    1811  4.060        738894 https://images.gr-assets.com/books/1397245675m/14935.jpg    
+00000077 439244196    Louis Sachar, Louis Sachar               Holes                                    1998  3.930        747445 https://images.gr-assets.com/books/1327781893m/38709.jpg    
+00000078 307275558    Lauren Weisberger                        The Devil Wears Prada                    2003  3.700        665930 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000079 143039954    Homer, Robert Fagles, E.V. Rieu, Fré... Ὀδ�?σσεια                        -720  3.730        670326 https://images.gr-assets.com/books/1390173285m/1381.jpg     
+00000080 156012197    Antoine de Saint-Exupéry, Richard Ho... Le Petit Prince                          1946  4.280        738757 https://images.gr-assets.com/books/1367545443m/157993.jpg   
+00000081 074324754X   Jeannette Walls                          The Glass Castle                         2005  4.240        621099 https://images.gr-assets.com/books/1400930557m/7445.jpg     
+00000082 385486804    Jon Krakauer                             Into the Wild                            1996  3.940        647684 https://images.gr-assets.com/books/1403173986m/1845.jpg     
+00000083 141439602    Charles Dickens, Richard Maxwell, Hab... A Tale of Two Cities                     1859  3.810        637412 https://images.gr-assets.com/books/1344922523m/1953.jpg     
+00000084 030734813X   Michael Crichton                         Jurassic Park                            1990  3.960        447833 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000085 60256656     Shel Silverstein                         The Giving Tree                          1964  4.380        702332 https://images.gr-assets.com/books/1174210942m/370493.jpg   
+00000086 385338600    John Grisham                             A Time to Kill                           1989  4.030        597775 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000087 374500010    Elie Wiesel, Marion Wiesel               Un di Velt Hot Geshvign                  1958  4.300        691231 https://images.gr-assets.com/books/1473495285m/1617.jpg     
+00000088 014241493X   John Green                               Paper Towns                              2008  3.880        461311 https://images.gr-assets.com/books/1349013610m/6442769.jpg  
+00000089 345418263    William Goldman                          The Princess Bride                       1973  4.250        628637 https://images.gr-assets.com/books/1327903636m/21787.jpg    
+00000090 014038572X   S.E. Hinton                              The Outsiders                            1967  4.060        659248 https://images.gr-assets.com/books/1442129426m/231804.jpg   
+00000091 385737947    James Dashner                            The Maze Runner                          2009  4.020        719925 https://images.gr-assets.com/books/1375596592m/6186357.jpg  
+00000092 61234001     Steven D. Levitt, Stephen J. Dubner      Freakonomics: A Rogue Economist Explo... 2005  3.930        524191 https://images.gr-assets.com/books/1327909092m/1202.jpg     
+00000093 517189607    Frances Hodgson Burnett                  The Secret Garden                        1911  4.120        639357 https://images.gr-assets.com/books/1327873635m/2998.jpg     
+00000094 60531045     Gabriel García Márquez, Gregory Rab... Cien años de soledad                    1967  4.040        490565 https://images.gr-assets.com/books/1327881361m/320.jpg      
+00000095 375751513    Oscar Wilde, Jeffrey Eugenides           The Picture of Dorian Gray               1891  4.060        590014 https://images.gr-assets.com/books/1424596966m/5297.jpg     
+00000096 345803507    E.L. James                               Fifty Shades Freed                       2012  3.880        387290 https://images.gr-assets.com/books/1336418837m/13536860.jpg 
+00000097 393970124    Bram Stoker, Nina Auerbach, David J. ... Dracula                                  1897  3.980        618973 https://images.gr-assets.com/books/1387151694m/17245.jpg    
+00000098 307269981    Stieg Larsson, Reg Keeland               Flickan som lekte med elden              2006  4.220        563994 https://images.gr-assets.com/books/1351778881m/5060378.jpg  
+00000099 1612130585   E.L. James                               Fifty Shades Darker                      2011  3.870        552059 https://images.gr-assets.com/books/1358266080m/11857408.jpg 
+00000100 60786507     Barbara Kingsolver                       The Poisonwood Bible                     1998  4.020        546502 https://images.gr-assets.com/books/1412242487m/7244.jpg     
+00000101 349113912    David Sedaris                            Me Talk Pretty One Day                   2000  3.970        495736 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000102 99408392     Maurice Sendak                           Where the Wild Things Are                1963  4.220        620618 https://images.gr-assets.com/books/1384434560m/19543.jpg    
+00000103 140449264    Alexandre Dumas, Robin Buss              Le Comte de Monte-Cristo                 1844  4.210        555822 https://images.gr-assets.com/books/1309203605m/7126.jpg     
+00000104 307265439    Cormac McCarthy                          The Road                                 2006  3.950        504793 https://images.gr-assets.com/books/1439197219m/6288.jpg     
+00000105 7524277      Veronica Roth                            Allegiant                                2013  3.630        463257 https://images.gr-assets.com/books/1395582745m/18710190.jpg 
+00000106              Tina Fey                                 Bossypants                               2011  3.940        506250 https://images.gr-assets.com/books/1481509554m/9418327.jpg  
+00000107 446693804    Nicholas Sparks                          A Walk to Remember                       1999  4.150        546948 https://images.gr-assets.com/books/1385738968m/3473.jpg     
+00000108 440241413    Sophie Kinsella                          Confessions of a Shopaholic              2000  3.610        543658 https://images.gr-assets.com/books/1327872404m/9416.jpg     
+00000109 451525264    Victor Hugo, Lee Fahnestock, Norman M... Les Misérables                          1862  4.140        513407 https://images.gr-assets.com/books/1411852091m/24280.jpg    
+00000110 553381695    George R.R. Martin                       A Clash of Kings                         1998  4.400        523303 https://images.gr-assets.com/books/1358254974m/10572.jpg    
+00000111 143037145    Kim Edwards                              The Memory Keeper's Daughter             2005  3.640        501430 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000112 670026603    Jojo Moyes                               Me Before You                            2012  4.270        587647 https://images.gr-assets.com/books/1357108762m/15507958.jpg 
+00000113 684833395    Joseph Heller                            Catch-22                                 1961  3.980        563265 https://images.gr-assets.com/books/1463157317m/168668.jpg   
+00000114 751529818    Mitch Albom, Saulius Dagys               Tuesdays with Morrie                     1997  4.060        556518 https://images.gr-assets.com/books/1423763749m/6900.jpg     
+00000115 312422156    Jeffrey Eugenides                        Middlesex                                2002  3.980        488243 https://images.gr-assets.com/books/1437029776m/2187.jpg     
+00000116 143039563    Mark Twain, Guy Cardwell, John Seelye    The Adventures of Tom Sawyer             1876  3.890        555359 https://images.gr-assets.com/books/1404811979m/24583.jpg    
+00000117 440498058    Madeleine L'Engle                        A Wrinkle in Time                        1962  4.040        615907 https://images.gr-assets.com/books/1329061522m/18131.jpg    
+00000118 143038095    Amy Tan                                  The Joy Luck Club                        1989  3.900        515090 https://images.gr-assets.com/books/1304978653m/7763.jpg     
+00000119 038549081X   Margaret Atwood                          The Handmaid's Tale                      1985  4.060        607889 https://images.gr-assets.com/books/1498057733m/38447.jpg    
+00000120 385729332    Ann Brashares                            The Sisterhood of the Traveling Pants    2001  3.750        525706 https://images.gr-assets.com/books/1461611233m/452306.jpg   
+00000121              Vladimir Nabokov, Craig Raine            Lolita                                   1955  3.880        469836 https://images.gr-assets.com/books/1377756377m/7604.jpg     
+00000122 60987103     Gregory Maguire, Douglas Smith           Wicked: The Life and Times of the Wic... 1995  3.520        506900 https://images.gr-assets.com/books/1437733293m/37442.jpg    
+00000123 582418275    John Grisham                             The Firm                                 1991  3.990        488269 https://images.gr-assets.com/books/1418465200m/5358.jpg     
+00000124 316098337    Emma Donoghue                            Room                                     2010  4.030        511360 https://images.gr-assets.com/books/1344265419m/7937843.jpg  
+00000125 521618746    William Shakespeare, Richard Andrews,... The Tragicall Historie of Hamlet, Pri... 1600  4.000        515820 https://images.gr-assets.com/books/1351051208m/1420.jpg     
+00000126 340839937    Frank Herbert                            Dune                                     1965  4.190        485032 https://images.gr-assets.com/books/1434908555m/234225.jpg   
+00000127 316346624    Malcolm Gladwell                         The Tipping Point: How Little Things ... 2000  3.920        490504 https://images.gr-assets.com/books/1473396980m/2612.jpg     
+00000128 1451648537   Walter Isaacson                          Steve Jobs                               2011  4.090        560715 https://images.gr-assets.com/books/1327861368m/11084145.jpg 
+00000129 451163966    Ken Kesey                                One Flew Over the Cuckoo's Nest          1962  4.180        491642 https://images.gr-assets.com/books/1485308778m/332613.jpg   
+00000130 684830493    Ernest Hemingway                         The Old Man and the Sea                  1952  3.730        520630 https://images.gr-assets.com/books/1329189714m/2165.jpg     
+00000131 142000663    John Steinbeck                           The Grapes of Wrath                      1939  3.920        322321 https://images.gr-assets.com/books/1352912927m/4395.jpg     
+00000132 1401308589   Mitch Albom                              The Five People You Meet in Heaven       2003  3.900        449501 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000133 451528824    L.M. Montgomery                          Anne of Green Gables                     1908  4.230        502247 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000134 1416914307   Cassandra Clare                          City of Glass                            2009  4.340        593173 https://images.gr-assets.com/books/1369452339m/3777732.jpg  
+00000135 055357342X   George R.R. Martin                       A Storm of Swords                        2000  4.540        469022 https://images.gr-assets.com/books/1497931121m/62291.jpg    
+00000136 006075995X   Rebecca Wells                            Divine Secrets of the Ya-Ya Sisterhood   1996  3.790        465676 https://images.gr-assets.com/books/1408313524m/137791.jpg   
+00000137 440242940    Diana Gabaldon                           Outlander                                1991  4.200        515547 https://images.gr-assets.com/books/1402600310m/10964.jpg    
+00000138 142437263    Nathaniel Hawthorne, Thomas E. Connol... The Scarlet Letter                       1850  3.370        509883 https://images.gr-assets.com/books/1404810944m/12296.jpg    
+00000139 1594744769   Ransom Riggs                             Miss Peregrine’s Home for Peculiar ... 2011  3.890        613674 https://images.gr-assets.com/books/1472782916m/9460487.jpg  
+00000140 030726999X   Stieg Larsson, Reg Keeland               Luftslottet som sprängdes               2007  4.200        443951 https://images.gr-assets.com/books/1327708260m/6892870.jpg  
+00000141 804139024    Andy Weir                                The Martian                              2012  4.390        423344 https://images.gr-assets.com/books/1413706054m/18007564.jpg 
+00000142 451207149    Ken Follett                              The Pillars of the Earth                 1989  4.290        462517 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000143 1476746583   Anthony Doerr                                                                     2014  4.310        470001 https://images.gr-assets.com/books/1451445646m/18143977.jpg 
+00000144 1400064163   Laura Hillenbrand                        Unbroken: A World War II Story of Sur... 2010  4.400        487775 https://images.gr-assets.com/books/1327861115m/8664353.jpg  
+00000145 671027387    Dan Brown                                Deception Point                          2001  3.670        455610 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000146 316055433    Donna Tartt                              The Goldfinch                            2013  3.870        396756 https://images.gr-assets.com/books/1451554970m/17333223.jpg 
+00000147 1595141715   Jay Asher                                Thirteen Reasons Why                     2007  4.020        463783 https://images.gr-assets.com/books/1333822506m/1217100.jpg  
+00000148 452287022    Tracy Chevalier                          Girl with a Pearl Earring                1999  3.850        467577 https://images.gr-assets.com/books/1327197580m/2865.jpg     
+00000149 525421033    Gayle Forman                             If I Stay                                2009  3.960        503527 https://images.gr-assets.com/books/1347462970m/4374400.jpg  
+00000150 312353766    Anita Diamant                            The Red Tent                             1997  4.160        424981 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000151 786856866    Rick Riordan                             The Sea of Monsters                      2006  4.230        514932 https://images.gr-assets.com/books/1400602661m/28186.jpg    
+00000152 446528056    Nicholas Sparks                          Dear John                                2006  4.010        441062 https://images.gr-assets.com/books/1397749854m/5526.jpg     
+00000153 1416914293   Cassandra Clare                          City of Ashes                            2008  4.210        541117 https://images.gr-assets.com/books/1432730356m/1582996.jpg  
+00000154 743477103    William Shakespeare                      The Tragedy of Macbeth                   1606  3.880        496018 https://images.gr-assets.com/books/1459795224m/8852.jpg     
+00000155 618346260    J.R.R. Tolkien                           The Two Towers                           1954  4.420        480446 https://images.gr-assets.com/books/1298415523m/15241.jpg    
+00000156 031232118X   Emily Giffin                             Something Borrowed                       2004  3.830        403601 https://images.gr-assets.com/books/1305063535m/42156.jpg    
+00000157 394800168    Dr. Seuss, ל�?ה נ�?ור               Green Eggs and Ham                       1960  4.290        457475 https://images.gr-assets.com/books/1468680100m/23772.jpg    
+00000158 142403881    Roald Dahl, Quentin Blake                Charlie and the Chocolate Factory        1964  4.100        453959 https://images.gr-assets.com/books/1309211401m/6310.jpg     
+00000159 1423101464   Rick Riordan                             The Battle of the Labyrinth              2008  4.390        508214 https://images.gr-assets.com/books/1443142158m/2120932.jpg  
+00000160 192833596    Charles Dickens                          Great Expectations                       1860  3.750        459247 https://images.gr-assets.com/books/1327920219m/2623.jpg     
+00000161 345339738    J.R.R. Tolkien                           The Return of the King                   1955  4.510        463959 https://images.gr-assets.com/books/1389977161m/18512.jpg    
+00000162              Albert Camus, Matthew    Ward            L’Étranger                            1942  3.960        420600 https://images.gr-assets.com/books/1349927872m/49552.jpg    
+00000163 142311339X   Rick Riordan                             The Lost Hero                            2010  4.350        271576 https://images.gr-assets.com/books/1464201003m/7736182.jpg  
+00000164 1250012570   Rainbow Rowell                           Eleanor & Park                           2013  4.110        514312 https://images.gr-assets.com/books/1341952742m/15745753.jpg 
+00000165 055358202X   George R.R. Martin                       A Feast for Crows                        2005  4.100        428186 https://images.gr-assets.com/books/1429538615m/13497.jpg    
+00000166 525423648    Ally Condie                              Matched                                  2010  3.680        511815 https://images.gr-assets.com/books/1367706191m/7735333.jpg  
+00000167 747263744    Neil Gaiman                              American Gods                            2001  4.110        378019 https://images.gr-assets.com/books/1258417001m/4407.jpg     
+00000168 385199570    Stephen King, Bernie Wrightson           The Stand                                1978  4.340        438832 https://images.gr-assets.com/books/1213131305m/149267.jpg   
+00000169 446547565    Nicholas Sparks                          The Last Song                            2008  4.140        424637 https://images.gr-assets.com/books/1286549186m/6400090.jpg  
+00000170 552151696    Dan Brown                                Digital Fortress                         1998  3.600        423019 https://images.gr-assets.com/books/1360095966m/11125.jpg    
+00000171 141439580    Jane Austen, Fiona Stafford              Emma                                     1815  3.990        459826 https://images.gr-assets.com/books/1373627931m/6969.jpg     
+00000172 345803922    Leo Tolstoy, Louise Maude, Leo Tolsto... �?нна Каренина                1877  4.020        297472 https://images.gr-assets.com/books/1352422904m/15823480.jpg 
+00000173 393312836    Anthony Burgess                          A Clockwork Orange                       1962  3.980        431195 https://images.gr-assets.com/books/1348339306m/227463.jpg   
+00000174 964729237    William Paul Young                       The Shack: Where Tragedy Confronts Et... 2007  3.740        419539 https://images.gr-assets.com/books/1344270232m/1812457.jpg  
+00000175 739380338    Rick Riordan                             The Last Olympian                        2009  4.500        397500 https://images.gr-assets.com/books/1327924597m/4502507.jpg  
+00000176 451169514    Stephen King                             It                                       1986  4.180        292592 https://images.gr-assets.com/books/1309376909m/18342.jpg    
+00000177 143058142    Fyodor Dostoyevsky, David McDuff         Пре�?тупление и нака�... 1866  4.180        380903 https://images.gr-assets.com/books/1382846449m/7144.jpg     
+00000178 61148512     Sylvia Plath                             The Bell Jar                             1963  3.980        401605 https://images.gr-assets.com/books/1473890514m/6514.jpg     
+00000179 7205236      Frank McCourt                            Angela's Ashes: A Memoir                 1996  4.070        392103 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000180 553208845    Hermann Hesse, Hilda Rosner              Siddhartha                               1922  3.990        372099 https://images.gr-assets.com/books/1428715580m/52036.jpg    
+00000181 679745580    Truman Capote                            In Cold Blood                            1965  4.050        381652 https://images.gr-assets.com/books/1424931136m/168642.jpg   
+00000182 316042676    Kami Garcia, Margaret Stohl              Beautiful Creatures                      2009  3.760        436093 https://images.gr-assets.com/books/1327873282m/6304335.jpg  
+00000183 1416975861   Cassandra Clare                          Clockwork Angel                          2010  4.330        490890 https://images.gr-assets.com/books/1454962884m/7171637.jpg  
+00000184 141301066    Roald Dahl, Quentin Blake                Matilda                                  1988  4.290        440743 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000185 385534639    Erin Morgenstern                         The Night Circus                         2011  4.030        429543 https://images.gr-assets.com/books/1387124618m/9361589.jpg  
+00000186 743227441    Philippa Gregory                         The Other Boleyn Girl                    2001  4.040        381080 https://images.gr-assets.com/books/1355932638m/37470.jpg    
+00000187 689865384    Scott Westerfeld                         Uglies                                   2005  3.860        449073 https://images.gr-assets.com/books/1443904172m/24770.jpg    
+00000188              George R.R. Martin                       A Dance with Dragons                     2011  4.310        365954 https://images.gr-assets.com/books/1327885335m/10664113.jpg 
+00000189 618640150    J.R.R. Tolkien                           The Lord of the Rings                    1955  4.470        389054 https://images.gr-assets.com/books/1411114164m/33.jpg       
+00000190 307592731    Cheryl Strayed                           Wild: From Lost to Found on the Pacif... 2012  3.960        379872 https://images.gr-assets.com/books/1453189881m/12262741.jpg 
+00000191 930289234    Alan Moore, Dave Gibbons, John Higgins   Watchmen                                 1987  4.350        398018 https://images.gr-assets.com/books/1442239711m/472331.jpg   
+00000192 075640407X   Patrick Rothfuss                         The Name of the Wind                     2007  4.550        400101 https://images.gr-assets.com/books/1472068073m/186074.jpg   
+00000193 316017922    Malcolm Gladwell                         Outliers: The Story of Success           2008  4.110        353011 https://images.gr-assets.com/books/1344266315m/3228917.jpg  
+00000194 142437247    Herman Melville, Andrew Delbanco, Tom... Moby Dick; or, The Whale                 1851  3.460        358050 https://images.gr-assets.com/books/1327940656m/153747.jpg   
+00000195 385340990    Mary Ann Shaffer, Annie Barrows          The Guernsey Literary and Potato Peel... 2008  4.120        393626 https://images.gr-assets.com/books/1351979318m/2728527.jpg  
+00000196 393327345    Chuck Palahniuk                          Fight Club                               1996  4.200        365349 https://images.gr-assets.com/books/1357128997m/5759.jpg     
+00000197 441008534    Charlaine Harris                         Dead Until Dark                          2001  3.960        420764 https://images.gr-assets.com/books/1468560853m/301082.jpg   
+00000198 671727796    Alice Walker                             The Color Purple                         1982  4.170        376766 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000199 739461192    John Grogan                              Marley & Me: Life and Love with the W... 2005  4.120        367304 https://images.gr-assets.com/books/1308858322m/12691.jpg    
+00000200 312330871    Agatha Christie                          Ten Little Niggers                       1939  4.230        408983 https://images.gr-assets.com/books/1391120695m/16299.jpg    
+00000201 385504225    Dan Brown                                The Lost Symbol                          2009  3.660        369428 https://images.gr-assets.com/books/1358274396m/6411961.jpg  
+00000202 1416989412   Becca Fitzpatrick                        Hush, Hush                               2009  4.000        448166 https://images.gr-assets.com/books/1358261334m/6339664.jpg  
+00000203              Jamie McGuire                            Beautiful Disaster                       2011  4.150        418309 https://images.gr-assets.com/books/1358259032m/11505797.jpg 
+00000204 1561797464   Charles Dickens                          A Christmas Carol                        1843  4.020        394540 https://images.gr-assets.com/books/1406512317m/5326.jpg     
+00000205 345476875    Anne Rice                                Interview with the Vampire               1976  3.970        372566 https://images.gr-assets.com/books/1380631642m/43763.jpg    
+00000206 62059939     Kiera Cass                               The Selection                            2012  4.150        505340 https://images.gr-assets.com/books/1322103400m/10507293.jpg 
+00000207 312362080    Janet Evanovich                          One for the Money                        1994  4.030        391007 https://images.gr-assets.com/books/1316730230m/6853.jpg     
+00000208 1400052173   Rebecca Skloot                           The Immortal Life of Henrietta Lacks     2010  4.040        377249 https://images.gr-assets.com/books/1327878144m/6493208.jpg  
+00000209 99446782     Thomas Harris                            The Silence of the Lambs                 1988  4.140        351107 https://images.gr-assets.com/books/1390426249m/23807.jpg    
+00000210 159514174X   Richelle Mead                                                                     2007  4.140        248283 https://images.gr-assets.com/books/1361098973m/345627.jpg   
+00000211 316010669    Malcolm Gladwell                         Blink: The Power of Thinking Without ... 2005  3.890        348196 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000212 038572179X   Ian McEwan                               Atonement                                2001  3.880        347006 https://images.gr-assets.com/books/1320449708m/6867.jpg     
+00000213 553213695    Franz Kafka, Stanley Corngold            Die Verwandlung                          1915  3.780        364933 https://images.gr-assets.com/books/1359061917m/485894.jpg   
+00000214 141382899    Rick Riordan                             The Titan's Curse                        2007  4.330        446668 https://images.gr-assets.com/books/1361038385m/561456.jpg   
+00000215 030788743X   Ernest Cline                                                                      2011  4.310        349423 https://images.gr-assets.com/books/1500930947m/9969571.jpg  
+00000216 1554681723   Garth Stein                              The Art of Racing in the Rain            2006  4.190        327409 https://images.gr-assets.com/books/1377206302m/3153910.jpg  
+00000217 739303406    Erik Larson, Tony Goldwyn                The Devil in the White City: Murder, ... 2003  3.980        309385 https://images.gr-assets.com/books/1312066724m/21996.jpg    
+00000218 425263908    Sylvia Day                               Bared to You                             2012  4.190        222678 https://images.gr-assets.com/books/1477803272m/13572249.jpg 
+00000219 66238501     C.S. Lewis, Pauline Baynes               The Chronicles of Narnia                 1956  4.240        376385 https://images.gr-assets.com/books/1449868701m/11127.jpg    
+00000221 1558743669   Dave Pelzer                              A Child Called "It": One Child's Cour... 1995  4.080        311543 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000222 752864327    Robert Ludlum                            The Bourne Identity                      1980  3.980        327122 https://images.gr-assets.com/books/1335860740m/7869.jpg     
+00000223 786817879    Eoin Colfer                              Artemis Fowl                             2001  3.820        386923 https://images.gr-assets.com/books/1327945104m/249747.jpg   
+00000224 385738935    Lauren Kate                              Fallen                                   2009  3.740        395296 https://images.gr-assets.com/books/1440619649m/6487308.jpg  
+00000225 142000655    John Steinbeck                           East of Eden                             1952  4.350        320919 https://images.gr-assets.com/books/1441547516m/4406.jpg     
+00000226 307341569    Gillian Flynn                            Dark Places                              2009  3.920        333452 https://images.gr-assets.com/books/1354988288m/5886881.jpg  
+00000227 385339089    John Grisham                             The Client                               1993  3.970        320083 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000228 312291639    Emma McLaughlin, Nicola Kraus            The Nanny Diaries                        2002  3.400        323762 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000229 451527747    Lewis Carroll, John Tenniel, Martin G... Alice's Adventures in Wonderland         1865  4.060        340920 https://images.gr-assets.com/books/1327872220m/24213.jpg    
+00000230 192802631    Jane Austen, James Kinsley, Deidre Sh... Persuasion                               1817  4.130        365425 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000231 312370830    Tatiana de Rosnay                        Elle s'appelait Sarah                    2007  4.140        312444 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000232 452284694    Stephen King                             The Gunslinger                           1982  3.990        332494 https://images.gr-assets.com/books/1375776480m/43615.jpg    
+00000233 140003468X   Gabriel García Márquez, Edith Grossman El amor en los tiempos del cólera       1985  3.890        283806 https://images.gr-assets.com/books/1327124987m/9712.jpg     
+00000234 014131088X   Laurie Halse Anderson                    Speak                                    1999  4.000        360156 https://images.gr-assets.com/books/1310121762m/439288.jpg   
+00000235 399159347    Liane Moriarty                           The Husband's Secret                     2013  3.920        232106 https://images.gr-assets.com/books/1460577225m/17802724.jpg 
+00000236 385494785    Jon Krakauer                             Into Thin Air: A Personal Account of ... 1997  4.110        291258 https://images.gr-assets.com/books/1463384482m/1898.jpg     
+00000237 1416524304   Stephen King                             Carrie                                   1974  3.930        356814 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000238 031242227X   Augusten Burroughs                       Running with Scissors                    2002  3.700        293878 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000239 307346609    Max Brooks                               World War Z: An Oral History of the Z... 2006  4.010        312969 https://images.gr-assets.com/books/1386328204m/8908.jpg     
+00000240 385537859    Dan Brown                                Inferno                                  2013  3.800        287533 https://images.gr-assets.com/books/1397093185m/17212231.jpg 
+00000241 440227534    Lois Lowry                               Number the Stars                         1989  4.110        333638 https://images.gr-assets.com/books/1370917812m/47281.jpg    
+00000242 446692638    James Patterson                          Along Came a Spider                      1993  4.080        311499 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000243 450417395    Stephen King                             Misery                                   1987  4.110        334647 https://images.gr-assets.com/books/1270545451m/10614.jpg    
+00000244 307341542    Gillian Flynn                            Sharp Objects                            2006  3.920        207889 https://images.gr-assets.com/books/1423241485m/66559.jpg    
+00000245 439366771    Katherine Paterson                       Bridge to Terabithia                     1977  3.980        337644 https://images.gr-assets.com/books/1327880087m/2839.jpg     
+00000246 312360266    P.C. Cast, Kristin Cast                  Marked                                   2007  3.790        360044 https://images.gr-assets.com/books/1317067002m/30183.jpg    
+00000247 743269519    Stephen R. Covey                         The 7 Habits of Highly Effective People  1989  4.050        314700 https://images.gr-assets.com/books/1421842784m/36072.jpg    
+00000248 743477545    William Shakespeare, Barbara A. Mowat... A Midsummer Night's Dream                1595  3.940        334241 https://images.gr-assets.com/books/1327874534m/1622.jpg     
+00000249 618711651    Jonathan Safran Foer                     Extremely Loud and Incredibly Close      2005  3.970        294726 https://images.gr-assets.com/books/1327879967m/4588.jpg     
+00000250 375869026    R.J. Palacio                             Wonder                                   2012  4.430        228538 https://images.gr-assets.com/books/1309285027m/11387515.jpg 
+00000251 039480001X   Dr. Seuss                                The Cat in the Hat                       1957  4.150        314016 https://images.gr-assets.com/books/1468890477m/233093.jpg   
+00000252 312641893    Marissa Meyer                            Cinder                                   2012  4.150        427663 https://images.gr-assets.com/books/1470056948m/11235712.jpg 
+00000253 316206849    Robert Galbraith, J.K. Rowling           The Cuckoo's Calling                     2013  3.830        297712 https://images.gr-assets.com/books/1358716559m/16160797.jpg 
+00000254 545123267    Maggie Stiefvater                        Shiver                                   2009  3.780        356625 https://images.gr-assets.com/books/1409283154m/6068551.jpg  
+00000255 452011876    Ayn Rand, Leonard Peikoff                Atlas Shrugged                           1957  3.680        283295 https://images.gr-assets.com/books/1405868167m/662.jpg      
+00000256 143038257    Greg Mortenson, David Oliver Relin       Three Cups of Tea                        2006  3.640        283516 https://images.gr-assets.com/books/1395407074m/49436.jpg    
+00000257 517223627    Jane Carruth, Lewis Carroll, Rene Cloke  Alice in Wonderland                      1865  4.030        343252 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000258 143034901    Carlos Ruiz Zafón, Lucia Graves         La sombra del viento                     2001  4.240        263685 https://images.gr-assets.com/books/1344545047m/1232.jpg     
+00000259 385738757    James Dashner                            The Scorch Trials                        2010  3.930        305643 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000260              Dale Carnegie                            How to Win Friends and Influence People  1936  4.130        282623 https://images.gr-assets.com/books/1442726934m/4865.jpg     
+00000261 767900383    Frances Mayes                            Under the Tuscan Sun                     1996  3.720        279264 https://images.gr-assets.com/books/1320524083m/480479.jpg   
+00000262 399167064    Liane Moriarty                           Big Little Lies                          2014  4.200        306186 https://images.gr-assets.com/books/1492239430m/19486412.jpg 
+00000263 590920685    Gail Carson Levine                       Ella Enchanted                           1997  3.970        339117 https://images.gr-assets.com/books/1410727190m/24337.jpg    
+00000264 743297334    Ernest Hemingway                         The Sun Also Rises                       1926  3.830        284988 https://images.gr-assets.com/books/1331828228m/3876.jpg     
+00000265 61120073     Betty  Smith                             A Tree Grows In Brooklyn                 1943  4.240        291909 https://images.gr-assets.com/books/1327883484m/14891.jpg    
+00000266 446677388    James Patterson                          Kiss the Girls                           1995  3.930        274639 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000267 312577222    Kristin Hannah                           The Nightingale                          2015  4.540        253606 https://images.gr-assets.com/books/1451446316m/21853621.jpg 
+00000268 1400078776   Kazuo Ishiguro                           Never Let Me Go                          2005  3.800        294123 https://images.gr-assets.com/books/1353048590m/6334.jpg     
+00000269 786890754    Cecelia Ahern                            PS, I Love You                           2003  4.010        262921 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000270 1844080382   Daphne du Maurier, Sally Beauman         Rebecca                                  1938  4.200        177384 https://images.gr-assets.com/books/1327871977m/12873.jpg    
+00000271 156030306    Daniel Keyes                             Flowers for Algernon                     1966  4.070        313044 https://images.gr-assets.com/books/1367141311m/18373.jpg    
+00000272 552995878    Laura Esquivel, Thomas  Christensen, ... Como agua para chocolate                 1989  3.940        263199 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000273 812968069    Lisa See                                 Snow Flower and the Secret Fan           2005  4.050        280475 https://images.gr-assets.com/books/1327880508m/1103.jpg     
+00000274 451205766    Mario Puzo, Robert Thompson, Peter Bart  The Godfather                            1969  4.360        256480 https://images.gr-assets.com/books/1394988109m/22034.jpg    
+00000275 525476881    John Green                               An Abundance of Katherines               2006  3.630        312754 https://images.gr-assets.com/books/1360206426m/49750.jpg    
+00000276 553803719    Isaac Asimov                             Foundation                               1951  4.130        279688 https://images.gr-assets.com/books/1417900846m/29579.jpg    
+00000277 62255657     Neil Gaiman                              The Ocean at the End of the Lane         2013  3.990        293844 https://images.gr-assets.com/books/1497098563m/15783514.jpg 
+00000278 60513063     Shel Silverstein                         A Light in the Attic                     1981  4.340        297861 https://images.gr-assets.com/books/1427169918m/30118.jpg    
+00000279 751565350    John Tiffany, Jack Thorne, J.K. Rowling  Harry Potter and the Cursed Child, Pa... 2016  3.750        270603 https://images.gr-assets.com/books/1470082995m/29056083.jpg 
+00000280 61726834     Lauren Oliver                            Delirium                                 2011  3.990        256975 https://images.gr-assets.com/books/1327890411m/11614718.jpg 
+00000281 385339704    John Grisham                             The Pelican Brief                        1992  3.950        288376 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000282 61139378     Neil Gaiman                              Coraline                                 2002  4.030        316379 https://images.gr-assets.com/books/1493497435m/17061.jpg    
+00000283 60853980     Terry Pratchett, Neil Gaiman             Good Omens: The Nice and Accurate Pro... 1990  4.250        298304 https://images.gr-assets.com/books/1392528568m/12067.jpg    
+00000284 140042598    Jack Kerouac                             On the Road                              1955  3.640        246602 https://images.gr-assets.com/books/1413588576m/70401.jpg    
+00000285 1476729085   Graeme Simsion                           The Rosie Project                        2013  4.010        251703 https://images.gr-assets.com/books/1371651741m/16181775.jpg 
+00000286 446579939    Nicholas Sparks                          The Lucky One                            2008  4.100        267166 https://images.gr-assets.com/books/1420816338m/3063499.jpg  
+00000287 451191153    Ayn Rand, Leonard Peikoff                The Fountainhead                         1943  3.850        244545 https://images.gr-assets.com/books/1491163636m/2122.jpg     
+00000288 425172902    Tom Clancy                               The Hunt for Red October                 1984  4.010        270318 https://images.gr-assets.com/books/1281995542m/19691.jpg    
+00000289 038039586X   Richard Adams                            Watership Down                           1972  4.050        292426 https://images.gr-assets.com/books/1405136931m/76620.jpg    
+00000290 307886263    Mindy Kaling                             Is Everyone Hanging Out Without Me? (... 2011  3.840        290674 https://images.gr-assets.com/books/1443264638m/10335308.jpg 
+00000291 375414495    Abraham Verghese                         Cutting for Stone                        2009  4.280        258319 https://images.gr-assets.com/books/1327931601m/3591262.jpg  
+00000292 006112527X   C.S. Lewis, Pauline Baynes               The Voyage of the Dawn Treader           1951  4.080        306492 https://images.gr-assets.com/books/1343185059m/140225.jpg   
+00000293 753453800    Robert Louis Stevenson                   Treasure Island                          1882  3.820        268012 https://images.gr-assets.com/books/1485248909m/295.jpg      
+00000294 1423140591   Rick Riordan                             The Son of Neptune                       2011  4.440        299980 https://images.gr-assets.com/books/1464201114m/9520360.jpg  
+00000295 1451627289   Stephen King                             11/22/63                                 2011  4.290        258464 https://images.gr-assets.com/books/1327876792m/10644930.jpg 
+00000296 241003008    Eric Carle                               The Very Hungry Caterpillar              1969  4.290        296952 https://images.gr-assets.com/books/1327878225m/4948.jpg     
+00000297 140285601    Kurt Vonnegut Jr.                        Cat's Cradle                             1963  4.180        238940 https://images.gr-assets.com/books/1327867150m/135479.jpg   
+00000298 451528557    H.G. Wells, Greg Bear, Carlo Pagetti     The Time Machine                         1895  3.870        276076 https://images.gr-assets.com/books/1327942880m/2493.jpg     
+00000299 849946158    Todd Burpo, Lynn Vincent                                                          2010  4.010        228371 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000300 385751060    John Boyne                               The Boy in the Striped Pyjamas           2006  4.100        285692 https://images.gr-assets.com/books/1366228171m/39999.jpg    
+00000301 1892295490   Joseph Conrad                            Heart of Darkness                        1899  3.420        255576 https://images.gr-assets.com/books/1392799983m/4900.jpg     
+00000302 044654759X   Nicholas Sparks                          Safe Haven                               2010  4.190        255531 https://images.gr-assets.com/books/1344268800m/7812659.jpg  
+00000303 1582701709   Rhonda Byrne                             The Secret                               2006  3.620        241537 https://images.gr-assets.com/books/1482865039m/52529.jpg    
+00000304 60987561     Wally Lamb                               I Know This Much Is True                 1998  4.170        246917 https://images.gr-assets.com/books/1373532198m/227711.jpg   
+00000305 1416524347   Stephen King                             Pet Sematary                             1983  3.910        256383 https://images.gr-assets.com/books/1308894674m/10583.jpg    
+00000306 671021001    Wally Lamb                               She's Come Undone                        1992  3.840        259576 https://images.gr-assets.com/books/1408313457m/5203.jpg     
+00000307 756404738    Patrick Rothfuss                         The Wise Man's Fear                      2011  4.570        245686 https://images.gr-assets.com/books/1452624392m/1215032.jpg  
+00000308 440241901    Sophie Kinsella                          Can You Keep a Secret?                   2003  3.830        278747 https://images.gr-assets.com/books/1330464293m/33724.jpg    
+00000309 1442403543   Cassandra Clare                          City of Fallen Angels                    2011  4.160        341826 https://images.gr-assets.com/books/1369452302m/6752378.jpg  
+00000310 743418174    Jennifer Weiner                          Good in Bed                              2001  3.700        248804 https://images.gr-assets.com/books/1327936464m/14748.jpg    
+00000311 380018179    Colleen McCullough                       The Thorn Birds                          1977  4.220        255651 https://images.gr-assets.com/books/1391416796m/3412.jpg     
+00000312 60530928     Neil Gaiman, Dave McKean                 The Graveyard Book                       2008  4.120        302303 https://images.gr-assets.com/books/1303859949m/2213661.jpg  
+00000313 1451681739   M.L. Stedman                             The Light Between Oceans                 2012  4.000        243526 https://images.gr-assets.com/books/1336683021m/13158800.jpg 
+00000314 439709105    Cornelia Funke, Anthea Bell              Tintenherz                               2003  3.860        285011 https://images.gr-assets.com/books/1328866790m/28194.jpg    
+00000315 91883768     Spencer Johnson, Kenneth H. Blanchard    Who Moved My Cheese?                     1998  3.740        237272 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000316 307279464    Bill Bryson                              A Walk in the Woods                      1997  4.050        250192 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000317 553279378    Maya Angelou                             I Know Why the Caged Bird Sings          1969  4.190        270859 https://images.gr-assets.com/books/1327957927m/13214.jpg    
+00000318 61950726     Christina Baker Kline                    Orphan Train                             2013  4.140        226091 https://images.gr-assets.com/books/1362409483m/15818107.jpg 
+00000319 1442416866   Cassandra Clare                          City of Lost Souls                       2012  4.300        300553 https://images.gr-assets.com/books/1460477703m/8755776.jpg  
+00000320 316204277    Maria Semple                             Where'd You Go, Bernadette               2012  3.900        215453 https://images.gr-assets.com/books/1338822317m/13526165.jpg 
+00000321 375806814    Wilson Rawls                             Where the Red Fern Grows                 1961  4.040        268548 https://images.gr-assets.com/books/1166154337m/10365.jpg    
+00000322 60557818     Neil Gaiman                              Neverwhere                               1996  4.180        268318 https://images.gr-assets.com/books/1348747943m/14497.jpg    
+00000323 571224385    Milan Kundera, Michael Henry Heim        Nesnesitelná lehkost bytí              1984  4.080        205279 https://images.gr-assets.com/books/1265401884m/9717.jpg     
+00000324              Rainbow Rowell                                                                    2013  4.120        340379 https://images.gr-assets.com/books/1499565420m/16068905.jpg 
+00000325 552135399    John Irving                              A Prayer for Owen Meany                  1989  4.220        226964 https://images.gr-assets.com/books/1260470010m/4473.jpg     
+00000326 316182540    Janet Fitch                              White Oleander                           1999  3.930        245674 https://images.gr-assets.com/books/1501159524m/32234.jpg    
+00000327 039925675X   Marie Lu                                 Legend                                   2011  4.190        299998 https://images.gr-assets.com/books/1501368160m/9275658.jpg  
+00000328 743496728    Jodi Picoult                             Nineteen Minutes                         2007  4.100        235978 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000329 1401323251   Randy Pausch, Jeffrey Zaslow             The Last Lecture                         2008  4.250        241869 https://images.gr-assets.com/books/1388075896m/2318271.jpg  
+00000330 812511816    Robert Jordan                            The Eye of the World                     1990  4.180        260184 https://images.gr-assets.com/books/1337818095m/228665.jpg   
+00000331 61150142     Jodi Picoult                             The Pact                                 1998  4.000        221225 https://images.gr-assets.com/books/1410754561m/10916.jpg    
+00000332 60764902     C.S. Lewis                               The magician's nephew                    1953  4.010        268355 https://images.gr-assets.com/books/1308814770m/65605.jpg    
+00000333 595440096    Lisa Genova                              Still Alice                              2007  4.300        223432 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000334 425263916    Sylvia Day                               Reflected in You                         2012  4.330        252564 https://images.gr-assets.com/books/1477802540m/13596809.jpg 
+00000335 375814248    Roald Dahl, Quentin Blake                James and the Giant Peach                1961  3.990        270402 https://images.gr-assets.com/books/1320412586m/6689.jpg     
+00000336 446696617    James Patterson                          1st To Die                               2001  4.050        233984 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000337 345453743    Douglas Adams                            The Ultimate Hitchhiker's Guide: Five... 1996  4.370        222842 https://images.gr-assets.com/books/1404613595m/13.jpg       
+00000338 340896965    David Nicholls                           One Day                                  2009  3.770        222926 https://images.gr-assets.com/books/1327873020m/6280118.jpg  
+00000339 60775858     Margaret Wise Brown, Clement Hurd                                                 1947  4.270        244842 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000340 61969559     Pittacus Lore                            I Am Number Four                         2010  3.940        253437 https://images.gr-assets.com/books/1305807140m/7747374.jpg  
+00000341 140275363    Homer, Robert Fagles, Frédéric Mugl... Illiad                                   -750  3.830        241088 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000342 316228532    J.K. Rowling                             The Casual Vacancy                       2012  3.280        231835 https://images.gr-assets.com/books/1358266832m/13497818.jpg 
+00000343 385339690    John Grisham                             The Runaway Jury                         1996  3.960        222712 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000344 316777730    David Sedaris                            Naked                                    1997  4.080        201337 https://images.gr-assets.com/books/1394178867m/4138.jpg     
+00000345 375840400    Christopher Paolini                      Eldest                                   2005  3.960        250000 https://images.gr-assets.com/books/1387119654m/45978.jpg    
+00000346 140621679    L. Frank Baum, W.W. Denslow              The Wonderful Wizard of Oz               1900  3.980        247521 https://images.gr-assets.com/books/1398003737m/236093.jpg   
+00000347 000720230X   C.S. Lewis                               Prince Caspian: The Return to Narnia     1951  3.960        250221 https://images.gr-assets.com/books/1308814880m/121749.jpg   
+00000348              E. Lockhart                              We Were Liars                            2014  3.850        273442 https://images.gr-assets.com/books/1402749479m/16143347.jpg 
+00000349 450031063    Stephen King                             Salem's Lot                              1975  3.990        228680 https://images.gr-assets.com/books/1327891565m/11590.jpg    
+00000350 679785892    Hunter S. Thompson, Ralph Steadman       Fear and Loathing in Las Vegas: A Sav... 1971  4.080        232489 https://images.gr-assets.com/books/1394204569m/7745.jpg     
+00000351 1416975888   Cassandra Clare                          Clockwork Prince                         2011  4.460        307994 https://images.gr-assets.com/books/1460477747m/10025305.jpg 
+00000352 62268341     Amy Poehler                              Yes Please                               2014  3.810        251082 https://images.gr-assets.com/books/1402815435m/20910157.jpg 
+00000353 743477553    William Shakespeare                      The Tragedy of Othello, The Moor of V... 1603  3.880        238875 https://images.gr-assets.com/books/1459795105m/12996.jpg    
+00000354 1400033411   Toni Morrison                            Beloved                                  1987  3.770        233825 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000355 015206396X   Kristin Cashore                          Graceling                                2008  4.100        281185 https://images.gr-assets.com/books/1331548394m/3236307.jpg  
+00000356 439206472    Lemony Snicket, Brett Helquist           The Bad Beginning                        1999  3.890        275670 https://images.gr-assets.com/books/1490085391m/78411.jpg    
+00000357 449213943    Erich Maria Remarque, A.W. Wheen         Im Westen nichts Neues                   1929  3.920        249113 https://images.gr-assets.com/books/1441227765m/355697.jpg   
+00000358 679805273    Dr. Seuss                                Oh, the Places You'll Go!                1990  4.340        257260 https://images.gr-assets.com/books/1421708635m/191139.jpg   
+00000359 159463176X   Khaled Hosseini                          And The Mountains Echoed                 2012  4.030        199326 https://images.gr-assets.com/books/1358190204m/16115612.jpg 
+00000360 345404475    Philip K. Dick, Roger Zelazny            Do Androids Dream of Electric Sheep?     1968  4.080        223828 https://images.gr-assets.com/books/1435458683m/7082.jpg     
+00000361 141439742    Charles Dickens, George Cruikshank, P... Oliver Twist                             1838  3.850        230181 https://images.gr-assets.com/books/1327868529m/18254.jpg    
+00000362 60652896     C.S. Lewis                               A Grief Observed                         1942  4.210        116277 https://images.gr-assets.com/books/1347801873m/11149.jpg    
+00000363 525423273    Stephanie Perkins                        Anna and the French Kiss                 2010  4.080        259479 https://images.gr-assets.com/books/1358271931m/6936382.jpg  
+00000364 7173040      Dr. Seuss                                How the Grinch Stole Christmas!          1957  4.360        250602 https://images.gr-assets.com/books/1327958149m/113946.jpg   
+00000365 1401207928   Alan Moore, David   Lloyd                V for Vendetta                           1990  4.250        210682 https://images.gr-assets.com/books/1343668985m/5805.jpg     
+00000366 743223136    David McCullough                         John Adams                               2001  4.050        215780 https://images.gr-assets.com/books/1478144278m/2203.jpg     
+00000367 553384287    Dean Koontz                              Odd Thomas                               2003  3.940        205986 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000368 679879250    Philip Pullman                           The Subtle Knife                         1997  4.100        242503 https://images.gr-assets.com/books/1451271814m/119324.jpg   
+00000369 439488400    Jerry Spinelli                           Stargirl                                 2000  3.740        237560 https://images.gr-assets.com/books/1335947642m/22232.jpg    
+00000370 1423113381   Rick Riordan                             The Red Pyramid                          2010  4.060        232791 https://images.gr-assets.com/books/1366227978m/7090447.jpg  
+00000371 441788386    Robert A. Heinlein                       Stranger in a Strange Land               1961  3.910        220301 https://images.gr-assets.com/books/1156897088m/350.jpg      
+00000372 965904830    David Sedaris                            Dress Your Family in Corduroy and Denim  2004  4.080        191923 https://images.gr-assets.com/books/1352983006m/10176.jpg    
+00000373 141311371    Roald Dahl, Quentin Blake                The BFG                                  1982  4.220        245855 https://images.gr-assets.com/books/1327872673m/6319.jpg     
+00000374 076790818X   Bill Bryson                              A Short History of Nearly Everything     2003  4.190        191535 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000375 439227143    Jack London                              The Call of the Wild                     1903  3.830        223932 https://images.gr-assets.com/books/1452291694m/1852.jpg     
+00000376 385738773    James Dashner                            The Death Cure                           2011  3.770        223674 https://images.gr-assets.com/books/1303997647m/7864437.jpg  
+00000377 61142026     Neil Gaiman                              Stardust                                 1999  4.070        237602 https://images.gr-assets.com/books/1459127484m/16793.jpg    
+00000378 618485228    Jhumpa Lahiri                            The Namesake                             2003  3.960        184211 https://images.gr-assets.com/books/1480106986m/33917.jpg    
+00000379 670022411    Deborah Harkness                         A Discovery of Witches                   2011  3.990        226622 https://images.gr-assets.com/books/1322168805m/8667848.jpg  
+00000380 375704027    Haruki Murakami, Jay Rubin               ノルウェイ�?�森 [Noruwei no Mori]  1987  4.020        183988 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000381 446672211    Billie Letts                             Where the Heart Is                       1995  4.000        208333 https://images.gr-assets.com/books/1327959469m/5168.jpg     
+00000382 525421580    John Green, David Levithan               Will Grayson, Will Grayson               2010  3.840        236431 https://images.gr-assets.com/books/1368393890m/6567017.jpg  
+00000383 307276902    James Frey                               A Million Little Pieces                  2003  3.620        184241 https://images.gr-assets.com/books/1483206985m/1241.jpg     
+00000384 1595141758   Richelle Mead                            Frostbite                                2008  4.300        256745 https://images.gr-assets.com/books/1361098960m/2282133.jpg  
+00000385 307352145    Susan Cain                               Quiet: The Power of Introverts in a W... 2012  4.040        202135 https://images.gr-assets.com/books/1328562861m/8520610.jpg  
+00000386 440439884    Scott O'Dell                             Island of the Blue Dolphins              1960  3.800        236015 https://images.gr-assets.com/books/1475166260m/233818.jpg   
+00000387 142437336    Arthur Miller, Christopher Bigsby        The Crucible                             1953  3.550        242980 https://images.gr-assets.com/books/1447764813m/17250.jpg    
+00000388 689840926    Gary Paulsen                             Hatchet                                  1986  3.680        222553 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000389 076531178X   Brandon Sanderson                        Mistborn : The Final Empire              2006  4.430        208944 https://images.gr-assets.com/books/1480717416m/68428.jpg    
+00000390 451528956    Robert Louis Stevenson, Vladimir Nabo... The Strange Case of Dr Jekyll and Mr ... 1886  3.790        223535 https://images.gr-assets.com/books/1318116526m/51496.jpg    
+00000391 679889108    Dr. Seuss                                The Lorax                                1971  4.350        226564 https://images.gr-assets.com/books/1327879938m/7784.jpg     
+00000392 810993139    Jeff Kinney                              Greg Heffley's Journal                   2004  3.960        254852 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000393 1599906953   Sarah J. Maas                            Throne of Glass                          2012  4.240        274987 https://images.gr-assets.com/books/1495278054m/7896527.jpg  
+00000394 1595141979   Richelle Mead                            Shadow Kiss                              2008  4.370        266742 https://images.gr-assets.com/books/1361099049m/2802316.jpg  
+00000395 684803356    Ernest Hemingway                         For Whom the Bell Tolls                  1940  3.950        195063 https://images.gr-assets.com/books/1492591524m/46170.jpg    
+00000396 345505336    Jamie Ford                               Hotel on the Corner of Bitter and Sweet  2009  3.980        197294 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000397 140120831    Patrick Süskind, John E. Woods          Das Parfum. Die Geschichte eines Mör... 1985  4.000        178135 https://images.gr-assets.com/books/1409112276m/343.jpg      
+00000398 60838582     Eric Schlosser                           Fast Food Nation : The Dark Side of t... 2001  3.730        179347 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000399 747599874    J.K. Rowling                             The Tales of Beedle the Bard             2007  4.060        284833 https://images.gr-assets.com/books/1373467575m/3950967.jpg  
+00000400 441569595    William Gibson                           Neuromancer                              1984  3.880        183878 https://images.gr-assets.com/books/1167348726m/22328.jpg    
+00000401 99910101     Ernest Hemingway                         A Farewell to Arms                       1929  3.790        186613 https://images.gr-assets.com/books/1313714836m/10799.jpg    
+00000402 553212281    Edgar Allan Poe                          The Tell-Tale Heart                      1843  4.150        195689 https://images.gr-assets.com/books/1327936583m/391729.jpg   
+00000403 1590302257   Sun Tzu, Thomas Cleary                   孫�?兵法 [Sūnzi bīngfǎ]           -500  3.950        167332 https://images.gr-assets.com/books/1453417993m/10534.jpg    
+00000404 385344228    William Landay                           Defending Jacob                          2012  3.970        182025 https://images.gr-assets.com/books/1329612158m/11367726.jpg 
+00000405 385334206    Kurt Vonnegut Jr.                        Breakfast of Champions                   1973  4.080        178154 https://images.gr-assets.com/books/1327934446m/4980.jpg     
+00000406 874774241    Betty Edwards                            Drawing on the Right Side of the Brain   1979  3.840        218264 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000407 60838728     Ann Patchett                             Bel Canto                                2001  3.920        192330 https://images.gr-assets.com/books/1352997328m/5826.jpg     
+00000408 739467352    Jared Diamond                            Guns, Germs, and Steel: The Fates of ... 1997  4.000        171558 https://images.gr-assets.com/books/1453215833m/1842.jpg     
+00000409 375508414    Fannie Flagg                             Fried Green Tomatoes at the Whistle S... 1987  4.260        207508 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000410 385474547    Chinua Achebe                            Things Fall Apart                        1958  3.610        199346 https://images.gr-assets.com/books/1352082529m/37781.jpg    
+00000411 385338694    Sophie Kinsella                          The Undomestic Goddess                   2005  3.820        200509 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000412 1881273156   Gary Chapman                             The Five Love Languages: How to Expre... 1990  4.230        165675 https://images.gr-assets.com/books/1369401342m/567795.jpg   
+00000413              Alexandre Dumas                          Les Trois Mousquetaires                  1844  4.060        195274 https://images.gr-assets.com/books/1320436982m/7190.jpg     
+00000414 1416589643   Chris Cleave                             The Other Hand                           2008  3.700        116784 https://images.gr-assets.com/books/1344401905m/6948436.jpg  
+00000415 031253275X   Alyson Noel                              Evermore                                 2009  3.590        230031 https://images.gr-assets.com/books/1362336360m/3975774.jpg  
+00000416 590032496    Roald Dahl, Quentin Blake                The Witches                              1983  4.170        221431 https://images.gr-assets.com/books/1351707720m/6327.jpg     
+00000417 743298020    Diane Setterfield                        The Thirteenth Tale                      2006  3.950        213200 https://images.gr-assets.com/books/1346267826m/40440.jpg    
+00000418 1595142509   Richelle Mead                            Spirit Bound                             2010  4.370        224247 https://images.gr-assets.com/books/1291168967m/6479259.jpg  
+00000419 1595141987   Richelle Mead                            Blood Promise                            2009  4.350        231853 https://images.gr-assets.com/books/1442530605m/5996153.jpg  
+00000420 446676071    Nicholas Sparks                          Message in a Bottle                      1998  3.950        185116 https://images.gr-assets.com/books/1163789140m/3478.jpg     
+00000421 345521307    Paula McLain                             The Paris Wife                           2011  3.790        191850 https://images.gr-assets.com/books/1320545874m/8683812.jpg  
+00000422 545044251    J.K. Rowling                             Complete Harry Potter Boxed Set          1998  4.740        190050 https://images.gr-assets.com/books/1392579059m/862041.jpg   
+00000423 62059963     Kiera Cass                               The Elite                                2013  4.020        234247 https://images.gr-assets.com/books/1391454595m/16248068.jpg 
+00000424 156001314    Umberto Eco, William Weaver, Seán Ba... Il nome della rosa                       1980  4.110        200217 https://images.gr-assets.com/books/1415375471m/119073.jpg   
+00000425 1416914633   Beatrice Sparks, Anonymous               Go Ask Alice                             1971  3.770        196677 https://images.gr-assets.com/books/1327870536m/46799.jpg    
+00000426 802130208    John Kennedy Toole, Walker Percy         A Confederacy of Dunces                  1980  3.890        170776 https://images.gr-assets.com/books/1436747103m/310612.jpg   
+00000427 158049580X   Oscar Wilde                              The Importance of Being Earnest          1895  4.170        210630 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000428 1423140605   Rick Riordan                             The Mark of Athena                       2012  4.470        277491 https://images.gr-assets.com/books/1464201354m/12127750.jpg 
+00000429 60855924     Terry Pratchett                          The Colour of Magic                      1983  3.970        190590 https://images.gr-assets.com/books/1407111017m/34497.jpg    
+00000430 1400079276   Haruki Murakami, Philip Gabriel          海辺�?�カフカ [Umibe no Kafuka]     2002  4.130        167593 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000431 525945563    Thomas Harris                            Red Dragon                               1981  4.010        194013 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000432 553803700    Isaac Asimov                             I, Robot                                 1950  4.170        198368 https://images.gr-assets.com/books/1388321463m/41804.jpg    
+00000433 451216954    J.R. Ward                                Dark Lover                               2005  4.210        227021 https://images.gr-assets.com/books/1429676285m/42899.jpg    
+00000434 1416989439   Becca Fitzpatrick                        Crescendo                                2010  4.070        226237 https://images.gr-assets.com/books/1362408146m/7791997.jpg  
+00000435 61726818     Lauren Oliver                            Before I Fall                            2010  3.920        220160 https://images.gr-assets.com/books/1361044695m/6482837.jpg  
+00000436 679457313    Arundhati Roy                            The God of Small Things                  1997  3.910        165378 https://images.gr-assets.com/books/1436217001m/9777.jpg     
+00000437 670024783    Sue Monk Kidd                            The Invention of Wings                   2014  4.230        168006 https://images.gr-assets.com/books/1386699861m/18079776.jpg 
+00000438 141043768    Liane Moriarty                           What Alice Forgot                        2009  4.050        165704 https://images.gr-assets.com/books/1377159022m/6469165.jpg  
+00000439 553380168    Stephen Hawking, Cao Chi, Phạm Văn... A Brief History of Time: From the Big... 1987  4.120        165628 https://images.gr-assets.com/books/1333578746m/3869.jpg     
+00000440 525951652    Ken Follett                              Fall of Giants                           2010  4.260        168911 https://images.gr-assets.com/books/1470384630m/7315573.jpg  
+00000441 1439148503   Stephen King                             Under the Dome                           2009  3.890        183292 https://images.gr-assets.com/books/1268982908m/6320534.jpg  
+00000442 553380958    Neal Stephenson                          Snow Crash                               1992  4.020        175883 https://images.gr-assets.com/books/1477624625m/830.jpg      
+00000443 670061050    Sarah Dessen                             Just Listen                              2006  4.060        202180 https://images.gr-assets.com/books/1358270741m/51738.jpg    
+00000444 525467564    A.A. Milne, Ernest H. Shepard            Winnie-the-Pooh                          1926  4.340        207550 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000445 62060554     S.J. Watson                              Before I Go to Sleep                     2011  3.870        180896 https://images.gr-assets.com/books/1358353512m/9736930.jpg  
+00000446 1420925539   Arthur Conan Doyle                       A Study in Scarlet                       1887  4.150        201499 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000447 375826726    Christopher Paolini                      Brisingr                                 2008  4.030        211645 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000448 310276993    Rick Warren                              The Purpose Driven Life: What on Eart... 2002  3.900        170491 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000449 312360282    P.C. Cast, Kristin Cast                  Betrayed: a House of Night Novel         2007  3.930        205340 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000450 451457811    Jim Butcher                              Storm Front                              2000  4.020        203053 https://images.gr-assets.com/books/1419456275m/47212.jpg    
+00000451 1593082649   Jane Austen, Alfred MacAdam              Northanger Abbey                         1817  3.800        205167 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000452 399162410    Rick Yancey                              The 5th Wave                             2013  4.100        260048 https://images.gr-assets.com/books/1359853842m/16101128.jpg 
+00000453 802142842    Charles Frazier                          Cold Mountain                            1997  3.830        185979 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000454 60245867     Laura Joffe Numeroff, Felicia Bond       If You Give a Mouse a Cookie             1985  4.240        198083 https://images.gr-assets.com/books/1276046901m/767680.jpg   
+00000455 312323867    Emily Giffin                             Something Blue                           2005  3.920        172417 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000456 822210894    Tennessee Williams                       A Streetcar Named Desire                 1947  3.970        194493 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000457 751537284    Elizabeth Kostova                        The Historian                            2005  3.770        190473 https://images.gr-assets.com/books/1338298031m/10692.jpg    
+00000458 385353308    Emily St. John Mandel                    Station Eleven                           2014  4.020        160466 https://images.gr-assets.com/books/1451446835m/20170404.jpg 
+00000459 1476738017   Fredrik Backman, Henning Koch            En man som heter Ove                     2012  4.350        183777 https://images.gr-assets.com/books/1405259930m/18774964.jpg 
+00000460 1406321346   Cassandra Clare                          Clockwork Princess                       2013  4.590        162099 https://images.gr-assets.com/books/1436788488m/18335634.jpg 
+00000461 1416500189   Pearl S. Buck                            The Good Earth                           1931  3.970        182220 https://images.gr-assets.com/books/1312497600m/1078.jpg     
+00000462 140135154    John Berger                              Ways of Seeing                           1972  3.750        155658 https://images.gr-assets.com/books/1464018308m/2784.jpg     
+00000463 385335970    Diana Gabaldon                           Dragonfly in Amber                       1992  4.310        178110 https://images.gr-assets.com/books/1456114344m/5364.jpg     
+00000464              Anonymous                                                                         1611  4.430        159457 https://images.gr-assets.com/books/1313518530m/1923820.jpg  
+00000465 743495667    Jennifer Weiner                          In Her Shoes                             2002  3.780        167400 https://images.gr-assets.com/books/1435252471m/14758.jpg    
+00000466 345368584    Chuck Dixon, J.R.R. Tolkien, David We... The Hobbit                               1989  4.480        155338 https://images.gr-assets.com/books/1374681632m/659469.jpg   
+00000467 1594489580   Junot Díaz                              The Brief Wondrous Life of Oscar Wao     2007  3.890        160330 https://images.gr-assets.com/books/1391409748m/297673.jpg   
+00000468 61120065     Zora Neale Hurston                       Their Eyes Were Watching God             1937  3.870        181106 https://images.gr-assets.com/books/1368072803m/37415.jpg    
+00000469 439321603    Newt Scamander, J.K. Rowling, Albus D... Fantastic Beasts and Where to Find Them  2001  3.950        185928 https://images.gr-assets.com/books/1303738520m/41899.jpg    
+00000470 316322407    Malala Yousafzai, Christina Lamb         I Am Malala: The Girl Who Stood Up fo... 2012  4.060        214412 https://images.gr-assets.com/books/1375414895m/17851885.jpg 
+00000471 141439807    Jane Austen, Kathryn Sutherland, Tony... Mansfield Park                           1814  3.840        205064 https://images.gr-assets.com/books/1397063295m/45032.jpg    
+00000472 080701429X   Viktor E. Frankl                         …trotzdem Ja zum Leben sagen: Ein P... 1946  4.330        171281 https://images.gr-assets.com/books/1467136625m/4069.jpg     
+00000473 670038601    Tana French                              In the Woods                             2007  3.740        188024 https://images.gr-assets.com/books/1348442606m/237209.jpg   
+00000474 618680004    Richard Dawkins                          The God Delusion                         2006  3.890        162740 https://images.gr-assets.com/books/1347220693m/14743.jpg    
+00000475 525422943    Gayle Forman                             Where She Went                           2011  4.060        193141 https://images.gr-assets.com/books/1347810457m/8492825.jpg  
+00000476 345915593    John Irving                              The World According to Garp              1978  4.070        167106 https://images.gr-assets.com/books/1447234581m/7069.jpg     
+00000477 515141429    Lee Child                                Killing Floor                            1997  4.040        162972 https://images.gr-assets.com/books/1399313258m/78129.jpg    
+00000478 375757325    Daniel Defoe, Gerald McCann, Virginia... The Life and Strange Surprising Adven... 1719  3.660        178188 https://images.gr-assets.com/books/1403180114m/2932.jpg     
+00000479 937832383    Niccolò Machiavelli, Adolph Caso, Ru... Il Principe                              1513  3.780        153128 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000480 440238153    Philip Pullman                           The Amber Spyglass                       2000  4.060        192315 https://images.gr-assets.com/books/1329189152m/18122.jpg    
+00000481 765346524    Terry Goodkind                           Wizard's First Rule                      1994  4.130        175771 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000482 1439153663   Kathleen Grissom                         The Kitchen House                        2010  4.180        168082 https://images.gr-assets.com/books/1463229128m/6837103.jpg  
+00000483 316769029    J.D. Salinger                            Franny and Zooey                         1961  3.980        152906 https://images.gr-assets.com/books/1355037988m/5113.jpg     
+00000484 385720920    Chuck Palahniuk                          Choke                                    2001  3.690        154643 https://images.gr-assets.com/books/1403186013m/29059.jpg    
+00000485 374528373    Fyodor Dostoyevsky, Richard Pevear, L... Брать�? Карамазовы        1880  4.300        155838 https://images.gr-assets.com/books/1427728126m/4934.jpg     
+00000486 375822747    Jeanne DuPrau                            The City of Ember                        2003  3.850        198809 https://images.gr-assets.com/books/1397931596m/307791.jpg   
+00000487 60541814     Michael Crichton                         The Andromeda Strain                     1969  3.870        173186 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000488 451933028    Stephen King                             The Green Mile                           1996  4.420        173950 https://images.gr-assets.com/books/1373903563m/11566.jpg    
+00000489 000100039X   Kahlil Gibran                            The Prophet                              1923  4.220        142641 https://images.gr-assets.com/books/1355046521m/2547.jpg     
+00000490 394541553    Art Spiegelman                           Maus: A Survivor's Tale : My Father B... 1985  4.350        184007 https://images.gr-assets.com/books/1327884972m/15196.jpg    
+00000491 312379838    P.C. Cast, Kristin Cast                  Untamed: A House of Night Novel          2008  3.950        191743 https://images.gr-assets.com/books/1438037020m/2866718.jpg  
+00000492 812550757    Orson Scott Card                         Speaker for the Dead                     1986  4.040        164287 https://images.gr-assets.com/books/1295660894m/7967.jpg     
+00000493 684823780    C.S. Lewis                               Mere Christianity                        1952  4.310        184759 https://images.gr-assets.com/books/1468102872m/11138.jpg    
+00000494 1400031702   Donna Tartt                              The Secret History                       1992  4.070        168405 https://images.gr-assets.com/books/1451554846m/29044.jpg    
+00000495 375725784    Dave Eggers                              A Heartbreaking Work of Staggering Ge... 2000  3.680        145459 https://images.gr-assets.com/books/1327714834m/4953.jpg     
+00000496 553381679    Jean M. Auel                             The Clan of the Cave Bear                1980  4.020        176062 https://images.gr-assets.com/books/1385331302m/1295.jpg     
+00000497 439228905    Anna Sewell                              Black Beauty                             1877  3.940        183255 https://s.gr-assets.com/assets/nophoto/book/111x148-bcc04...
+00000498 192833987    Leo Tolstoy, Henry Gifford, Aylmer Ma... Война и миръ                   1869  4.110        168037 https://images.gr-assets.com/books/1413215930m/656.jpg      
+00000499 679735771    Bret Easton Ellis                        American Psycho                          1991  3.810        166083 https://images.gr-assets.com/books/1436934349m/28676.jpg    
+00000500 613371658    Meg Cabot                                The Princess Diaries                     2000  3.760        193140 https://images.gr-assets.com/books/1355011082m/38980.jpg    
