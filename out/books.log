@@ -1,0 +1,28 @@
+2018-02-19 20:41:09.526 [main] INFO  a00123456.book.BookStore - Starting Books
+2018-02-19 20:41:09.530 [main] INFO  a00123456.book.BookStore - 2018-02-20T04:41:09.529801Z
+2018-02-19 20:41:09.702 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=8626, firstName=Autumn, lastName=Estrada, street=Ap #433-7134 Porttitor Rd., city=Mont-Sainte-Genevive, postalCode=99783, phone=415-424-7701, emailAddress=rutrum.dolor@vulputatenisi.edu, joinedDate=2016-04-18]
+2018-02-19 20:41:09.705 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=4976, firstName=Kareem, lastName=Robertson, street=5106 Vitae, Rd., city=Nantes, postalCode=N19 0TP, phone=466-8020201, emailAddress=faucibus@condimentumeget.org, joinedDate=2006-12-22]
+2018-02-19 20:41:09.975 [main] INFO  a00123456.book.BookStore - 2018-02-20T04:41:09.975634Z
+2018-02-19 20:41:09.976 [main] INFO  a00123456.book.BookStore - Duration: 445 ms
+2018-02-19 20:41:09.976 [main] INFO  a00123456.book.BookStore - Books has stopped
+2018-02-19 20:41:24.655 [main] INFO  a00123456.book.BookStore - Starting Books
+2018-02-19 20:41:24.659 [main] INFO  a00123456.book.BookStore - 2018-02-20T04:41:24.658666Z
+2018-02-19 20:41:24.785 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=8626, firstName=Autumn, lastName=Estrada, street=Ap #433-7134 Porttitor Rd., city=Mont-Sainte-Genevive, postalCode=99783, phone=415-424-7701, emailAddress=rutrum.dolor@vulputatenisi.edu, joinedDate=2016-04-18]
+2018-02-19 20:41:24.788 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=4976, firstName=Kareem, lastName=Robertson, street=5106 Vitae, Rd., city=Nantes, postalCode=N19 0TP, phone=466-8020201, emailAddress=faucibus@condimentumeget.org, joinedDate=2006-12-22]
+2018-02-19 20:41:24.818 [main] INFO  a00123456.book.BookStore - 2018-02-20T04:41:24.818133Z
+2018-02-19 20:41:24.818 [main] INFO  a00123456.book.BookStore - Duration: 159 ms
+2018-02-19 20:41:24.818 [main] INFO  a00123456.book.BookStore - Books has stopped
+2018-02-20 11:30:20.743 [main] INFO  a00123456.book.BookStore - Starting Books
+2018-02-20 11:30:20.762 [main] INFO  a00123456.book.BookStore - 2018-02-20T19:30:20.747769Z
+2018-02-20 11:30:20.826 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=8626, firstName=Autumn, lastName=Estrada, street=Ap #433-7134 Porttitor Rd., city=Mont-Sainte-Genevive, postalCode=99783, phone=415-424-7701, emailAddress=rutrum.dolor@vulputatenisi.edu, joinedDate=2016-04-18]
+2018-02-20 11:30:20.832 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=4976, firstName=Kareem, lastName=Robertson, street=5106 Vitae, Rd., city=Nantes, postalCode=N19 0TP, phone=466-8020201, emailAddress=faucibus@condimentumeget.org, joinedDate=2006-12-22]
+2018-02-20 11:30:20.992 [main] INFO  a00123456.book.BookStore - 2018-02-20T19:30:20.992145Z
+2018-02-20 11:30:20.992 [main] INFO  a00123456.book.BookStore - Duration: 244 ms
+2018-02-20 11:30:20.992 [main] INFO  a00123456.book.BookStore - Books has stopped
+2018-02-20 11:30:35.139 [main] INFO  a00123456.book.BookStore - Starting Books
+2018-02-20 11:30:35.157 [main] INFO  a00123456.book.BookStore - 2018-02-20T19:30:35.142671Z
+2018-02-20 11:30:35.227 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=8626, firstName=Autumn, lastName=Estrada, street=Ap #433-7134 Porttitor Rd., city=Mont-Sainte-Genevive, postalCode=99783, phone=415-424-7701, emailAddress=rutrum.dolor@vulputatenisi.edu, joinedDate=2016-04-18]
+2018-02-20 11:30:35.234 [main] WARN  a00123456.book.io.CustomerReader - Customer exists: Customer [id=4976, firstName=Kareem, lastName=Robertson, street=5106 Vitae, Rd., city=Nantes, postalCode=N19 0TP, phone=466-8020201, emailAddress=faucibus@condimentumeget.org, joinedDate=2006-12-22]
+2018-02-20 11:30:35.254 [main] INFO  a00123456.book.BookStore - 2018-02-20T19:30:35.254206Z
+2018-02-20 11:30:35.254 [main] INFO  a00123456.book.BookStore - Duration: 111 ms
+2018-02-20 11:30:35.254 [main] INFO  a00123456.book.BookStore - Books has stopped

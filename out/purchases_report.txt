@@ -1,0 +1,14 @@
+
+Purchases Report
+-------------------------------------------------------------------------------------------------------------------
+Name                     Title                                                                            Price   
+-------------------------------------------------------------------------------------------------------------------
+Montana Carr             The Tell-Tale Heart                                                              $6.85
+Montana Carr             The Chronicles of Narnia                                                         $4.89
+Montana Carr             The Bell Jar                                                                     $6.14
+Montana Carr             She's Come Undone                                                                $7.14
+Montana Carr             My Sister's Keeper                                                               $8.53
+Montana Carr             Im Westen nichts Neues                                                           $6.08
+
+Value of purchases: $39.63
+
