@@ -54,19 +54,19 @@ public class PurchaseReader extends Reader {
 	 * @throws ApplicationException
 	 */
 	public static int read(File purchaseDataFile, PurchasesDao dao) throws ApplicationException {
-		int purchaseCount = 0;
-		File file = new File(FILENAME);
+		int purchasesCount = 0;
+		// File file = new File(FILENAME);
 		FileReader in;
 		Iterable<CSVRecord> records;
 		try {
-			in = new FileReader(file);
+			in = new FileReader(purchaseDataFile);
 			records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(in);
 		} catch (IOException e) {
 			throw new ApplicationException(e);
 		}
 
 		Map<Long, Purchase> purchases = new HashMap<>();
-		LOG.debug("Reading" + file.getAbsolutePath());
+		LOG.debug("Reading" + purchaseDataFile.getAbsolutePath());
 		for (CSVRecord record : records) {
 			long id = Long.parseLong(record.get("id"));
 			long customerId = Long.parseLong(record.get("customer_id"));
@@ -84,22 +84,27 @@ public class PurchaseReader extends Reader {
 				bookId = bookIdArray[(int) (Math.random() * bookIdCount)];
 			}
 		}
+		if (in != null) {
+			try {
+				in.close();
+			} catch (IOException e) {
+				LOG.error(e.getMessage());
+				throw new ApplicationException(e.getMessage());
+			}
+		}
 
-		// return purchases;
-		LOG.debug("All purchases added");
 		List<Purchase> purchasesList = new ArrayList<>(purchases.values());
 		try {
 			for (Purchase purchase : purchasesList) {
 				dao.add(purchase);
-				LOG.debug("Added " + purchase.toString() + " to the database as " + purchase.getId());
-				purchaseCount++;
+				purchasesCount++;
 			}
-			LOG.debug("All purchases added");
 		} catch (SQLException e) {
-			throw new ApplicationException(e);
+			LOG.error(e.getMessage());
+			throw new ApplicationException(e.getMessage());
 		}
 
-		return purchaseCount;
+		return purchasesCount;
 	}
 
 }

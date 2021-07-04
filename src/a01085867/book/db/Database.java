@@ -22,21 +22,22 @@ import org.apache.logging.log4j.Logger;
  * @author Sam Cirka, A00123456
  *
  */
-public class Database implements DbConstants {
+public class Database {
 
-	// private static final String DB_PROPERTIES_FILENAME = "db.properties";
-	// public static final String DB_DRIVER_KEY = "db.driver";
-	// public static final String DB_URL_KEY = "db.url";
-	// public static final String DB_USER_KEY = "db.user";
-	// public static final String DB_PASSWORD_KEY = "db.password";
+	private static final String DB_PROPERTIES_FILENAME = "db.properties";
+	public static final String DB_DRIVER_KEY = "db.driver";
+	public static final String DB_URL_KEY = "db.url";
+	public static final String DB_USER_KEY = "db.user";
+	public static final String DB_PASSWORD_KEY = "db.password";
 
-	private static final Logger LOG = LogManager.getLogger();
+	private static final Logger LOG = LogManager.getLogger(Database.class);
 	private static Database theInstance = new Database();
 	private static Connection connection;
 	private static Properties properties;
 	private static boolean dbTableDropRequested;
 
 	private Database() {
+
 	}
 
 	/**
@@ -76,6 +77,10 @@ public class Database implements DbConstants {
 		connection = DriverManager.getConnection(properties.getProperty(DB_URL_KEY), properties.getProperty(DB_USER_KEY),
 				properties.getProperty(DB_PASSWORD_KEY));
 		LOG.debug("Database connected");
+
+		if (dbTableDropRequested) {
+
+		}
 	}
 
 	/**
@@ -84,7 +89,6 @@ public class Database implements DbConstants {
 	public void shutdown() {
 		if (connection != null) {
 			try {
-				LOG.debug("Closing the DB connection");
 				connection.close();
 				connection = null;
 			} catch (SQLException e) {
@@ -101,7 +105,7 @@ public class Database implements DbConstants {
 	 * @throws SQLException
 	 */
 	public static boolean tableExists(String targetTableName) throws SQLException {
-		DatabaseMetaData databaseMetaData = Database.getTheInstance().getConnection().getMetaData();
+		DatabaseMetaData databaseMetaData = getConnection().getMetaData();
 		ResultSet resultSet = null;
 		String tableName = null;
 
@@ -129,7 +133,4 @@ public class Database implements DbConstants {
 		return dbTableDropRequested;
 	}
 
-	public static boolean isMsSqlServer() {
-		return Database.properties.get(DB_DRIVER_KEY).toString().contains("sqlserver");
-	}
 }

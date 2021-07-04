@@ -47,33 +47,40 @@ public class CustomerReader extends Reader {
 	public static void read(File customerDataFile, CustomerDao dao) throws ApplicationException {
 
 		BufferedReader customerReader = null;
+		LOG.debug("Reading" + customerDataFile.getAbsolutePath());
+
+		int i = 0;
 
 		try {
 			customerReader = new BufferedReader(new FileReader(customerDataFile));
-			LOG.debug("Reading" + customerDataFile.getAbsolutePath());
+
 			String line = null;
 			line = customerReader.readLine(); // skip the header line
 			while ((line = customerReader.readLine()) != null) {
-				Customer customer = readCustomerString(line);
 				LOG.debug("line: " + line);
 				try {
+					Customer customer = readCustomerString(line);
 					dao.add(customer);
 				} catch (SQLException e) {
-					throw new ApplicationException(e);
+					LOG.error(e.getMessage());
+
+					// LOG.debug("Added " + customer.toString() + " as " + customer.getId());
 				}
 			}
 		} catch (IOException e) {
-			throw new ApplicationException(e.getMessage());
+			LOG.error(e.getMessage());
 		} finally {
 			try {
 				if (customerReader != null) {
 					customerReader.close();
 				}
 			} catch (IOException e) {
-				throw new ApplicationException(e.getMessage());
+				LOG.error(e.getMessage());
+				// throw new ApplicationException(e.getMessage());
 			}
-		}
+			LOG.debug("customer " + ++i);
 
+		}
 	}
 
 	/**
@@ -115,7 +122,8 @@ public class CustomerReader extends Reader {
 			customer = new Customer.Builder(id, phone).setFirstName(firstName).setLastName(lastName).setStreet(street).setCity(city)
 					.setPostalCode(postalCode).setEmailAddress(emailAddress).setJoinedDate(year, month, day).build();
 		} catch (DateTimeException e) {
-			throw new ApplicationException(e.getMessage());
+			// throw new ApplicationException(e.getMessage());
+			LOG.error(e.getMessage());
 		}
 
 		return customer;

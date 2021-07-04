@@ -1,16 +1,16 @@
 /**
- * Project: A00123456Lab2
+ * Project: A01085867_Assignment2_2021
  * File: Validator.java
+ * Date: Jun. 27, 2021
+ * Time: 4:15:58 p.m.
  */
-
 package a01085867.book.data.util;
 
 /**
- * Validate data.
- * 
- * @author Sam Cirka, A00123456
+ * @author Kelvin Musodza, A01085867
  *
  */
+
 public class Validator {
 
 	private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";

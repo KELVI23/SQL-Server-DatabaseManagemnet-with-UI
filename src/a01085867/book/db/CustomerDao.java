@@ -1,3 +1,9 @@
+/**
+ * Project: A01085867_Assignment2_2021
+ * File: CustomerDao.java
+ * Date: Jun. 24, 2021
+ * Time: 9:59:28 p.m.
+ */
 package a01085867.book.db;
 
 import java.io.File;
@@ -17,22 +23,23 @@ import a01085867.book.ApplicationException;
 import a01085867.book.data.Customer;
 import a01085867.book.io.CustomerReader;
 
+/**
+ * s
+ * 
+ * @author Kelvin Musodza, A01085867
+ *
+ */
 public class CustomerDao extends Dao implements DbConstants {
 
 	public static final String TABLE_NAME = CUSTOMER_TABLE_NAME;
-	private static final String CUSTOMERS_DATA_FILENAME = "customers.dat";
+	public static final String CUSTOMERS_DATA_FILENAME = "customers.dat";
 	private static Logger LOG = LogManager.getLogger(CustomerDao.class);
 	private static CustomerDao theInstance = new CustomerDao();
+	@SuppressWarnings("unused")
 	private static Database database;
 
-	// public CustomerDao(Database database) throws ApplicationException {
-	// super(database, TABLE_NAME);
-	//
-	// load();
-	// }
 	private CustomerDao() {
 		super(TABLE_NAME);
-
 		database = Database.getTheInstance();
 	}
 
@@ -47,8 +54,8 @@ public class CustomerDao extends Dao implements DbConstants {
 		File customerDataFile = new File(CUSTOMERS_DATA_FILENAME);
 
 		try {
-			if (!Database.tableExists(CustomerDao.TABLE_NAME) || Database.dbTableDropRequested()) {
-				if (Database.tableExists(CustomerDao.TABLE_NAME) && Database.dbTableDropRequested()) {
+			if (!Database.tableExists(TABLE_NAME) || Database.dbTableDropRequested()) {
+				if (Database.tableExists(TABLE_NAME) && Database.dbTableDropRequested()) {
 					drop();
 				}
 				create();
@@ -60,29 +67,25 @@ public class CustomerDao extends Dao implements DbConstants {
 				CustomerReader.read(customerDataFile, this);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			LOG.error(e);
-			throw new ApplicationException(e);
+			LOG.error(e.getMessage());
 		}
-
 	}
 
 	@Override
 	public void create() throws SQLException {
-		LOG.debug("Creating database table" + TABLE_NAME);
+		LOG.debug("Creating dataase table" + TABLE_NAME);
 
 		String sql = String.format("CREATE TABLE %s(" + "%s BIGINT,"//
-				+ "%s VARCHAR(%d),"// fistName
-				+ "%s VARCHAR(%d),"// lastName
-				+ "%s VARCHAR(%d),"// street
-				+ "%s VARCHAR(%d),"// city
-				+ "%s VARCHAR(%d),"// postalCode
-				+ "%s VARCHAR(%d),"// phone
-				+ "%s VARCHAR(%d),"// email
-				+ "%s DATETIME,"// joinedDate
-				+ "PRIMARY KEY (%s))", // PrimaryKey ID
-				TABLE_NAME, //
-				Column.ID.name, //
+				+ "%s VARCHAR(%d),"// firstname
+				+ "%s VARCHAR(%d),"//
+				+ "%s VARCHAR(%d)," //
+				+ "%s VARCHAR(%d)," //
+				+ "%s VARCHAR(%d)," //
+				+ "%s VARCHAR(%d)," //
+				+ "%s VARCHAR(%d),"//
+				+ "%s DATETIME,"//
+				+ "PRIMARY KEY (%s))", // id as primary key
+				TABLE_NAME, Column.ID.name, //
 				Column.FIRST_NAME.name, Column.FIRST_NAME.length, //
 				Column.LAST_NAME.name, Column.LAST_NAME.length, //
 				Column.STREET.name, Column.STREET.length, //
@@ -92,8 +95,8 @@ public class CustomerDao extends Dao implements DbConstants {
 				Column.EMAIL_ADDRESS.name, Column.EMAIL_ADDRESS.length, //
 				Column.JOINED_DATE.name, //
 				Column.ID.name);
-		super.create(sql);
 
+		super.create(sql);
 	}
 
 	public void add(Customer customer) throws SQLException {
@@ -103,21 +106,23 @@ public class CustomerDao extends Dao implements DbConstants {
 				customer.getFirstName(), //
 				customer.getLastName(), //
 				customer.getStreet(), //
+				customer.getCity(), //
 				customer.getPostalCode(), //
 				customer.getPhone(), //
 				customer.getEmailAddress(), //
 				toTimestamp(customer.getJoinedDate()));
 		LOG.debug(String.format("Adding %s was %s", customer, result));
+
 	}
 
 	/*
 	 * Update the customer
 	 */
 	public void update(Customer customer) throws SQLException {
-		String sql = String.format("UPDATE %s SET %s=?, %s=?, %s=?, %s=?, %s=?, %s=?, %s=?, %s=?, WHERE %s=?", TABLE_NAME, //
-				Column.FIRST_NAME.name, //
+		String sql = String.format("UPDATE %s SET %s=?, %s=?,%s=?,%s=?,%s=?,%s=?,%s=?,%s=?,%s=?, WHERE %s=?", TABLE_NAME, Column.FIRST_NAME.name, //
 				Column.LAST_NAME.name, //
 				Column.STREET.name, //
+				Column.CITY.name, //
 				Column.POSTAL_CODE.name, //
 				Column.PHONE.name, //
 				Column.EMAIL_ADDRESS.name, //
@@ -129,11 +134,12 @@ public class CustomerDao extends Dao implements DbConstants {
 				customer.getFirstName(), //
 				customer.getLastName(), //
 				customer.getStreet(), //
+				customer.getCity(), //
 				customer.getPostalCode(), //
 				customer.getPhone(), //
 				customer.getEmailAddress(), //
 				toTimestamp(customer.getJoinedDate()));
-		LOG.debug(String.format("Updating %s was %s", customer, result));
+		LOG.debug(String.format("Adding %s was %s", customer, result));
 	}
 
 	public void delete(Customer customer) throws SQLException {
@@ -145,6 +151,8 @@ public class CustomerDao extends Dao implements DbConstants {
 			String sql = String.format("DELETE FROM %s WHERE %s='%s'", TABLE_NAME, Column.ID.name, customer.getId());
 			int rowcount = statement.executeUpdate(sql);
 			LOG.debug(String.format("Deleted %d rows", rowcount));
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
@@ -170,20 +178,19 @@ public class CustomerDao extends Dao implements DbConstants {
 			while (resultSet.next()) {
 				ids.add(resultSet.getLong(Column.ID.name));
 			}
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
-
 		return ids;
-
 	}
 
 	/*
 	 * Retrieve specific customer using customer ID
 	 */
-
 	public Customer getCustomer(Long customerId) throws Exception {
-		String sql = String.format("SELECT * FROM %s WHERE %s = %d", TABLE_NAME, Column.ID.name, customerId);
+		String sql = String.format("SELECT * FROM %s WHERE %s  = %d", TABLE_NAME, Column.ID.name, customerId);
 
 		Statement statement = null;
 		ResultSet resultSet = null;
@@ -196,13 +203,14 @@ public class CustomerDao extends Dao implements DbConstants {
 			int count = 0;
 			while (resultSet.next()) {
 				count++;
+				// if more than one customer is retrieved
 				if (count > 1) {
-					throw new ApplicationException(String.format("Expected one result but got %d", count));
+					throw new ApplicationException(String.format("Expected one customer but got %d", count));
 				}
 				Timestamp timestamp = resultSet.getTimestamp(Column.JOINED_DATE.name);
 				LocalDate date = timestamp.toLocalDateTime().toLocalDate();
 
-				Customer customer = new Customer.Builder(resultSet.getInt(Column.ID.name), resultSet.getString(Column.PHONE.name))//
+				Customer customer = new Customer.Builder(resultSet.getInt(Column.ID.name), resultSet.getString(Column.PHONE.name))
 						.setFirstName(resultSet.getString(Column.FIRST_NAME.name))//
 						.setLastName(resultSet.getString(Column.LAST_NAME.name)) //
 						.setStreet(resultSet.getString(Column.STREET.name)) //
@@ -214,29 +222,31 @@ public class CustomerDao extends Dao implements DbConstants {
 
 				return customer;
 			}
-
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
 		return null;
-
 	}
 
 	/*
 	 * Count customers
 	 */
-	public int countAllCustomers() throws Exception {
+	public int countAllCustomers() throws SQLException {
 		Statement statement = null;
 		int count = 0;
 		try {
 			Connection connection = Database.getConnection();
 			statement = connection.createStatement();
-			// Execute a statement
-			String sqlString = String.format("SELECT COUNT(*) AS total FROM %s", tableName);
+			// Execute statement
+			String sqlString = String.format("SELECT COUNT(*) AS total FROM %s", TABLE_NAME);
 			ResultSet resultSet = statement.executeQuery(sqlString);
 			if (resultSet.next()) {
 				count = resultSet.getInt("total");
 			}
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
@@ -247,15 +257,15 @@ public class CustomerDao extends Dao implements DbConstants {
 	 * table columns
 	 */
 	public enum Column {
-		ID("id", 16), // 1
-		FIRST_NAME("firstName", 20), // 2
-		LAST_NAME("lastName", 20), // 3
-		STREET("street", 40), // 4
-		CITY("city", 20), // 5
-		POSTAL_CODE("postalCode", 6), // 6
-		PHONE("phone", 10), // 7
-		EMAIL_ADDRESS("emailAddress", 40), // 8
-		JOINED_DATE("joinedDate", 8);// 9
+		ID("id", 16), // field #1
+		FIRST_NAME("firstName", 20), // field #2
+		LAST_NAME("lastName", 20), // field #3
+		STREET("street", 40), // field #4
+		CITY("city", 20), // field #5
+		POSTAL_CODE("postalCode", 6), // field #6
+		PHONE("phone", 10), // field #7
+		EMAIL_ADDRESS("emailAddress", 40), // field #8
+		JOINED_DATE("joinedDate", 8);// field #9
 
 		String name;
 		int length;

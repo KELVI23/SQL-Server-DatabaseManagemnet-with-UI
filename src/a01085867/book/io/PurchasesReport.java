@@ -1,5 +1,5 @@
 /**
- * Project: Books
+ * s * Project: Books
  * File: PurchasesReport.java
  */
 
@@ -184,6 +184,21 @@ public class PurchasesReport {
 	public static class Item {
 		private String firstName;
 		private String lastName;
+		private String title;
+		private float price;
+
+		/**
+		 * @param firstName
+		 * @param lastName
+		 * @param title
+		 * @param price
+		 */
+		public Item(String firstName, String lastName, String title, float price) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.title = Common.truncateIfRequired(title, 80);
+			this.price = price;
+		}
 
 		/**
 		 * @return the firstName
@@ -213,22 +228,6 @@ public class PurchasesReport {
 			return price;
 		}
 
-		private String title;
-		private float price;
-
-		/**
-		 * @param firstName
-		 * @param lastName
-		 * @param title
-		 * @param price
-		 */
-		public Item(String firstName, String lastName, String title, float price) {
-			this.firstName = firstName;
-			this.lastName = lastName;
-			this.title = Common.truncateIfRequired(title, 80);
-			this.price = price;
-		}
-
 		/*
 		 * (non-Javadoc)
 		 * @see java.lang.Object#toString()
@@ -239,4 +238,5 @@ public class PurchasesReport {
 		}
 
 	}
+
 }

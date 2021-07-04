@@ -4,9 +4,11 @@ import java.awt.EventQueue;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.time.Duration;
 import java.time.Instant;
 
+import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.config.ConfigurationSource;
@@ -18,7 +20,7 @@ import a01085867.book.db.BookDao;
 import a01085867.book.db.CustomerDao;
 import a01085867.book.db.Database;
 import a01085867.book.db.PurchasesDao;
-import a01085867.ui.MainFrame;
+import a01085867.book.ui.MainFrame;
 
 /**
  * Project: Books
@@ -32,7 +34,6 @@ import a01085867.ui.MainFrame;
 public class BookStore {
 
 	private static final String LOG4J_CONFIG_FILENAME = "log4j2.xml";
-
 	static {
 		configureLogging();
 	}
@@ -43,20 +44,12 @@ public class BookStore {
 	 * ex. -inventory -make=honda -by_count -desc -total -service
 	 * 
 	 * @throws ApplicationException
+	 * @throws SQLException
 	 * @throws ParseException
 	 */
-	// public BookStore(String[] args) throws ApplicationException {
-	// LOG.debug("Input args: " + Arrays.toString(args));
-	// BookOptions.process(args);
-	// }
-	/**
-	 * 
-	 * @throws ApplicationException
-	 * @throws IOException
-	 * @throws FileNotFoundException
-	 * @throws ParseException
-	 */
-	public BookStore() throws ApplicationException, FileNotFoundException, IOException {
+	public BookStore() throws ApplicationException, FileNotFoundException, IOException, SQLException {
+		// LOG.debug("Input args: " + Arrays.toString(args));
+		// BookOptions.process(args);
 		Database.getTheInstance().initiate();
 
 		CustomerDao.getTheInstance().load();
@@ -71,61 +64,27 @@ public class BookStore {
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 */
-	// public static void main(String[] args) {
-	// LOG.info("Starting Books");
-	// Instant startTime = Instant.now();
-	// LOG.info(startTime);
-	//
-	// // start the Bookstore System
-	//
-	// try {
-	// BookStore bookStore = new BookStore();
-	//
-	// if (BookOptions.isHelpOptionSet()) {
-	// BookOptions.Value[] values = BookOptions.Value.values();
-	// System.out.format("%-5s %-15s %-10s %s%n", "Option", "Long Option", "Has Value", "Description");
-	// for (BookOptions.Value value : values) {
-	// System.out.format("-%-5s %-15s %-10s %s%n", value.getOption(), ("-" + value.getLongOption()), value.isHasArg(),
-	// value.getDescription());
-	// }
-	//
-	// System.out.println("\nex. -inventory -make=honda -by_count -desc -total -service");
-	//
-	// return;
-	// }
-	//
-	// bookStore.run();
-	// } catch (ApplicationException | FileNotFoundException e) {
-	// // e.printStackTrace();
-	// LOG.debug(e.getMessage());
-	// }
-	//
-	// Instant endTime = Instant.now();
-	// LOG.info(endTime);
-	// LOG.info(String.format("Duration: %d ms", Duration.between(startTime, endTime).toMillis()));
-	// LOG.info("Books has stopped");
-	// }
-
-	/**
-	 * 
-	 * @param args
-	 * @throws IOException
-	 * @throws FileNotFoundException
-	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		LOG.info("Starting Books");
 		Instant startTime = Instant.now();
 		LOG.info(startTime);
 
 		// start the Bookstore System
-
 		try {
 			BookStore bookStore = new BookStore();
-
 			bookStore.run();
-		} catch (
+			// if (BookOptions.isHelpOptionSet()) {
+			// BookOptions.Value[] values = BookOptions.Value.values();
+			// System.out.format("%-5s %-15s %-10s %s%n", "Option", "Long Option", "Has Value", "Description");
+			// for (BookOptions.Value value : values) {
+			// System.out.format("-%-5s %-15s %-10s %s%n", value.getOption(), ("-" + value.getLongOption()), value.isHasArg(),
+			// value.getDescription());
+			// }
+			//
+			// System.out.println("\nex. -inventory -make=honda -by_count -desc -total -service");
 
-		Exception e) {
+		} catch (ApplicationException | IOException | SQLException e) {
+			// e.printStackTrace();
 			LOG.debug(e.getMessage());
 		}
 
@@ -171,6 +130,7 @@ public class BookStore {
 		BookDao bookDao = BookDao.getTheInstance();
 		PurchasesDao purchaseDao = PurchasesDao.getTheInstance();
 		createUI(customerDao, bookDao, purchaseDao);
+		// generateReports();
 	}
 
 	/**
@@ -189,12 +149,11 @@ public class BookStore {
 			}
 		});
 	}
-
-	/**
-	 * Generate the reports from the input data
-	 * 
-	 * @throws FileNotFoundException
-	 */
+	// /**
+	// * Generate the reports from the input data
+	// *
+	// * @throws FileNotFoundException
+	// */
 	// private void generateReports() throws FileNotFoundException {
 	// LOG.debug("generating the reports");
 	//
@@ -225,7 +184,7 @@ public class BookStore {
 	// }
 	//
 	// }
-
+	//
 	// /**
 	// * @param reportFilename
 	// * @return

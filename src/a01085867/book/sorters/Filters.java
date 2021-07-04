@@ -1,5 +1,15 @@
+/**
+ * Project: A01085867_Assignment2_2021
+ * File: Filters.java
+ * Date: Jun. 27, 2021
+ * Time: 3:41:21 p.m.
+ */
 package a01085867.book.sorters;
 
+/**
+ * @author Kelvin Musodza, A01085867
+ *
+ */
 public class Filters {
 
 	private static boolean byAuthor;
@@ -98,5 +108,4 @@ public class Filters {
 	public static void setByTitle(boolean byTitle) {
 		Filters.byTitle = byTitle;
 	}
-
 }

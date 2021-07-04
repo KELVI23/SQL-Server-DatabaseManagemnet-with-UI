@@ -31,7 +31,7 @@ public class AllData {
 	 */
 	public static void loadData() throws ApplicationException {
 		LOG.debug("loading the data");
-		// books = BookReader.read(null, null);
+		// books = BookReader.read();
 		// customers = CustomerReader.read();
 		// purchases = PurchaseReader.read();
 		LOG.debug("successfully loaded the data");

@@ -1,3 +1,9 @@
+/**
+ * Project: A01085867_Assignment2_2021
+ * File: BookDao.java
+ * Date: Jun. 24, 2021
+ * Time: 9:59:04 p.m.
+ */
 package a01085867.book.db;
 
 import java.io.File;
@@ -15,18 +21,20 @@ import a01085867.book.ApplicationException;
 import a01085867.book.data.Book;
 import a01085867.book.io.BookReader;
 
+/**
+ * @author Kelvin Musodza, A01085867
+ *
+ */
 public class BookDao extends Dao implements DbConstants {
 
+	@SuppressWarnings("unused")
 	private static BookDao theInstance = new BookDao();
 	public static final String TABLE_NAME = BOOK_TABLE_NAME;
 	private static final String BOOK_DATA_FILENAME = "books500.csv";
 	private static Logger LOG = LogManager.getLogger(BookDao.class);
+	@SuppressWarnings("unused")
 	private static Database database;
 
-	// protected BookDao(Database database) throws ApplicationException {
-	// super(database, TABLE_NAME);
-	// load();
-	// }
 	private BookDao() {
 		super(TABLE_NAME);
 
@@ -37,7 +45,7 @@ public class BookDao extends Dao implements DbConstants {
 		return theInstance;
 	}
 
-	public void load() throws ApplicationException {
+	public void load() throws ApplicationException, SQLException {
 		File bookDataFile = new File(BOOK_DATA_FILENAME);
 		try {
 			if (!Database.tableExists(BookDao.TABLE_NAME) || Database.dbTableDropRequested()) {
@@ -53,9 +61,9 @@ public class BookDao extends Dao implements DbConstants {
 				BookReader.read(bookDataFile, this);
 
 			}
+
 		} catch (SQLException e) {
-			LOG.debug(e);
-			throw new ApplicationException(e);
+			LOG.debug(e.getMessage());
 		}
 	}
 
@@ -64,15 +72,15 @@ public class BookDao extends Dao implements DbConstants {
 		LOG.debug("Creating database table " + TABLE_NAME);
 
 		String sqlString = String.format("CREATE TABLE %s(" //
-				+ "%s BIGINT, " // ID
-				+ "%s VARCHAR(%d), " // ISBN
-				+ "%s VARCHAR(%d), " // AUTHORS
-				+ "%s INT, " // YEAR
-				+ "%s VARCHAR(%d), " // TITLE
-				+ "%s FLOAT, " // RATING
-				+ "%s INT, " // RATING_COUNT
-				+ "%s VARCHAR(%d), " // IMAGE_URL
-				+ "PRIMARY KEY (%s))", // ID
+				+ "%s BIGINT,"// ID
+				+ "%s VARCHAR(%d),"// ISBN
+				+ "%s VARCHAR(%d),"// AUTHORS
+				+ "%s INT,"// YEAR
+				+ "%s VARCHAR(%d),"// TITLE
+				+ "%s FLOAT,"// rating
+				+ "%s INT,"// rating_count
+				+ "%s VARCHAR(%d),"// image url
+				+ "PRIMARY KEY (%s))", // id as primary key
 				TABLE_NAME, //
 				Column.ID.name, //
 				Column.ISBN.name, Column.ISBN.length, //
@@ -84,7 +92,7 @@ public class BookDao extends Dao implements DbConstants {
 				Column.IMAGE_URL.name, Column.IMAGE_URL.length, //
 				Column.ID.name);
 
-		super.create(sqlString);
+		create(sqlString);
 	}
 
 	public void add(Book book) throws SQLException {
@@ -102,14 +110,13 @@ public class BookDao extends Dao implements DbConstants {
 	}
 
 	/**
-	 * Update the book.
-	 *
+	 * Update the book table
+	 * 
 	 * @param book
 	 * @throws SQLException
 	 */
 	public void update(Book book) throws SQLException {
-		String sqlString = String.format("UPDATE %s SET %s=?, %s=?, %s=?, %s=?, %s=?, %s=?, %s=? WHERE %s=?", TABLE_NAME, //
-				Column.ISBN.name, //
+		String sqlString = String.format("UPDATE %s SET %s=?, %s=?, %s=?, %s=?, %s=?, %s=?, %s=? WHERE %s=?", TABLE_NAME, Column.ISBN.name, //
 				Column.AUTHORS.name, //
 				Column.YEAR.name, //
 				Column.TITLE.name, //
@@ -132,8 +139,8 @@ public class BookDao extends Dao implements DbConstants {
 	}
 
 	/**
-	 * Delete the book from the database.
-	 *
+	 * Delete a book the database
+	 * 
 	 * @param book
 	 * @throws SQLException
 	 */
@@ -144,13 +151,17 @@ public class BookDao extends Dao implements DbConstants {
 			connection = Database.getConnection();
 			statement = connection.createStatement();
 
-			String sqlString = String.format("DELETE FROM %s WHERE %s='%s'", TABLE_NAME, Column.ID.name, book.getId());
+			String sqlString = String.format("DELETE FROM %s WHERE %s = '%s'", TABLE_NAME, Column.ID.name, book.getId());
 			LOG.debug(sqlString);
 			int rowcount = statement.executeUpdate(sqlString);
 			LOG.debug(String.format("Deleted %d rows", rowcount));
+
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
+
 	}
 
 	/**

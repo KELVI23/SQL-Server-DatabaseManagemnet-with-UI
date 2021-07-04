@@ -48,11 +48,11 @@ public class BookReader extends Reader {
 	 */
 	public static int read(File bookDataFile, BookDao dao) throws ApplicationException {
 		int bookCount = 0;
-		File file = new File(FILENAME);
+		// File file = new File(bookDataFile);
 		FileReader in;
 		Iterable<CSVRecord> records;
 		try {
-			in = new FileReader(file);
+			in = new FileReader(bookDataFile);
 			records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(in);
 		} catch (IOException e) {
 			throw new ApplicationException(e);
@@ -60,7 +60,7 @@ public class BookReader extends Reader {
 
 		Map<Long, Book> books = new HashMap<>();
 
-		LOG.debug("Reading" + file.getAbsolutePath());
+		LOG.debug("Reading" + bookDataFile.getAbsolutePath());
 		for (CSVRecord record : records) {
 			String id = record.get("book_id");
 			String isbn = record.get("isbn");
@@ -89,7 +89,8 @@ public class BookReader extends Reader {
 			try {
 				in.close();
 			} catch (IOException e) {
-				throw new ApplicationException(e);
+				LOG.error(e.getMessage());
+				throw new ApplicationException(e.getMessage());
 			}
 		}
 		List<Book> booksList = new ArrayList<>(books.values());

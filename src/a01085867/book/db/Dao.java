@@ -26,10 +26,6 @@ public abstract class Dao {
 	protected final Database database;
 	protected final String tableName;
 
-	// protected Dao(Database database, String tableName) {
-	// this.database = database;
-	// this.tableName = tableName;
-	// }
 	protected Dao(String tableName) {
 		database = Database.getTheInstance();
 		this.tableName = tableName;

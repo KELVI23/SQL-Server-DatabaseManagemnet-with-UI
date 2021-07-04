@@ -1,3 +1,9 @@
+/**
+ * Project: A01085867_Assignment2_2021
+ * File: BookDao.java
+ * Date: Jun. 24, 2021
+ * Time: 9:59:04 p.m.
+ */
 package a01085867.book.db;
 
 import java.io.File;
@@ -21,16 +27,11 @@ public class PurchasesDao extends Dao implements DbConstants {
 	private static final String PURCHASES_DATA_FILENAME = "purchases.csv";
 	private static final Logger LOG = LogManager.getLogger(PurchasesDao.class);
 	private static PurchasesDao theInstance = new PurchasesDao();
+	@SuppressWarnings("unused")
 	private static Database database;
-
-	// protected PurchasesDao(Database database) throws ApplicationException {
-	// super(database, TABLE_NAME);
-	// load();
-	// }
 
 	private PurchasesDao() {
 		super(TABLE_NAME);
-
 		database = Database.getTheInstance();
 	}
 
@@ -41,12 +42,12 @@ public class PurchasesDao extends Dao implements DbConstants {
 	public void load() throws ApplicationException {
 		File purchasesDataFile = new File(PURCHASES_DATA_FILENAME);
 		try {
-			if (!Database.tableExists(PurchasesDao.TABLE_NAME) || Database.dbTableDropRequested()) {
+			if (!Database.tableExists(TABLE_NAME) || (Database.dbTableDropRequested())) {
 				if (Database.tableExists(PurchasesDao.TABLE_NAME) && Database.dbTableDropRequested()) {
 					drop();
 				}
 				create();
-				LOG.debug("Inserting the purchases");
+				LOG.debug("Inserting purchases into database");
 				if (!purchasesDataFile.exists()) {
 					throw new ApplicationException(String.format("Required file %s is missing", PURCHASES_DATA_FILENAME));
 
@@ -55,8 +56,7 @@ public class PurchasesDao extends Dao implements DbConstants {
 
 			}
 		} catch (SQLException e) {
-			LOG.debug(e);
-			throw new ApplicationException(e);
+			LOG.error(e.getMessage());
 		}
 	}
 
@@ -64,45 +64,43 @@ public class PurchasesDao extends Dao implements DbConstants {
 	public void create() throws SQLException {
 		LOG.debug("Creating database table " + TABLE_NAME);
 
-		String sqlString = String.format("CREATE TABLE %s(" //
-				+ "%s BIGINT, " // ID
-				+ "%s BIGINT, " // CUSTOMER_ID
-				+ "%s BIGINT, " // BOOK_ID
-				+ "%s FLOAT, " // PRICE
-				+ "PRIMARY KEY (%s), " // ID
-				+ "CONSTRAINT CUST_FK " //
-				+ "FOREIGN KEY (%s) " // CUSTOMER_ID
-				+ "REFERENCES %s (%s), " //
-				+ "CONSTRAINT BOOK_FK " //
-				+ "FOREIGN KEY (%s) " // BOOK_ID
-				+ "REFERENCES %s (%s)) ", //
-				TABLE_NAME, //
+		String sqlString = String.format("CREATE TABLE %s("//
+				+ "%s BIGINT,"// ID
+				+ "%s BIGINT," // CUSTOMER_ID
+				+ "%s BIGINT," // BOOK_ID
+				+ "%s FlOAT," // PRICE
+				+ "PRIMARY KEY (%s),"// ID
+				+ "CONSTRAINT CUST_FK " // 7
+				+ "FOREIGN KEY (%s) " // CUSTOMER_ID 8
+				+ "REFERENCES %s (%s), " // 9
+				+ "CONSTRAINT BOOK_FK " // 10
+				+ "FOREIGN KEY (%s) " // BOOK_ID 11
+				+ "REFERENCES %s (%s)) ", // 12
+				TABLE_NAME, // 1
 				Column.ID.name, //
 				Column.CUSTOMER_ID.name, //
 				Column.BOOK_ID.name, //
 				Column.PRICE.name, //
 				Column.ID.name, //
-				Column.CUSTOMER_ID.name, //
-				CUSTOMER_TABLE_NAME, //
-				Column.ID.name, //
-				Column.BOOK_ID.name, //
-				BOOK_TABLE_NAME, //
-				Column.ID.name);
-
-		// String sqlString = String.format("create table %s(" //
-		// + "id BIGINT, " //
-		// + "customerId BIGINT, " //
-		// + "bookId BIGINT," //
-		// + "price FLOAT, " //
-		// + " CONSTRAINT CUST_FK FOREIGN KEY (customerId) REFERENCES A01019366_Customer (id), " //
-		// + " CONSTRAINT BOOK_FK FOREIGN KEY (bookId) REFERENCES A01019366_Book (id)) ", //
-		// TABLE_NAME);
+				Column.CUSTOMER_ID.name, // 7
+				CUSTOMER_TABLE_NAME, Column.CUSTOMER_ID.name, // 8,9
+				Column.BOOK_ID.name, // 10
+				BOOK_TABLE_NAME, // 11
+				Column.BOOK_ID.name);// 12
 
 		super.create(sqlString);
+
 	}
 
+	/**
+	 * Insert into database
+	 * 
+	 * @param purchase
+	 * @throws SQLException
+	 */
+
 	public void add(Purchase purchase) throws SQLException {
-		String sqlString = String.format("INSERT INTO %s values(?, ?, ?, ?)", TABLE_NAME);
+		String sqlString = String.format("INSERT INTO %s values(?,?,?,?)", TABLE_NAME);
 		boolean result = execute(sqlString, //
 				purchase.getId(), //
 				purchase.getCustomerId(), //
@@ -112,8 +110,8 @@ public class PurchasesDao extends Dao implements DbConstants {
 	}
 
 	/**
-	 * Update the purchase.
-	 *
+	 * Update the purchase
+	 * 
 	 * @param purchase
 	 * @throws SQLException
 	 */
@@ -130,7 +128,9 @@ public class PurchasesDao extends Dao implements DbConstants {
 				purchase.getBookId(), //
 				purchase.getPrice(), //
 				purchase.getId());
+
 		LOG.debug(String.format("Updating %s was %s", purchase, result ? "successful" : "unsuccessful"));
+
 	}
 
 	/**
@@ -148,8 +148,10 @@ public class PurchasesDao extends Dao implements DbConstants {
 
 			String sqlString = String.format("DELETE FROM %s WHERE %s='%s'", TABLE_NAME, Column.ID.name, purchase.getId());
 			LOG.debug(sqlString);
-			int rowcount = statement.executeUpdate(sqlString);
-			LOG.debug(String.format("Deleted %d rows", rowcount));
+			int rowCount = statement.executeUpdate(sqlString);
+			LOG.debug(String.format("Deleted %d rows", rowCount));
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
@@ -177,6 +179,9 @@ public class PurchasesDao extends Dao implements DbConstants {
 			while (resultSet.next()) {
 				ids.add(resultSet.getLong(Column.ID.name));
 			}
+
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 
 		} finally {
 			close(statement);
@@ -210,13 +215,16 @@ public class PurchasesDao extends Dao implements DbConstants {
 					throw new ApplicationException(String.format("Expected one result, got %d", count));
 				}
 
-				Purchase purchase = new Purchase.Builder(resultSet.getInt(Column.ID.name), //
-						resultSet.getInt(Column.CUSTOMER_ID.name), //
-						resultSet.getInt(Column.BOOK_ID.name), //
+				Purchase purchase = new Purchase.Builder(resultSet.getLong(Column.ID.name), //
+						resultSet.getLong(Column.CUSTOMER_ID.name), //
+						resultSet.getLong(Column.BOOK_ID.name), //
 						resultSet.getFloat(Column.PRICE.name)).build();
 
 				return purchase;
 			}
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
+
 		} finally {
 			close(statement);
 		}
@@ -226,9 +234,10 @@ public class PurchasesDao extends Dao implements DbConstants {
 
 	/**
 	 * @return
+	 * @throws SQLException
 	 * @throws Exception
 	 */
-	public int countAllPurchases() throws Exception {
+	public int countAllPurchases() throws SQLException {
 		Statement statement = null;
 		int count = 0;
 		try {
@@ -240,6 +249,8 @@ public class PurchasesDao extends Dao implements DbConstants {
 			if (resultSet.next()) {
 				count = resultSet.getInt("total");
 			}
+		} catch (SQLException e) {
+			LOG.error(e.getMessage());
 		} finally {
 			close(statement);
 		}
@@ -260,4 +271,5 @@ public class PurchasesDao extends Dao implements DbConstants {
 			this.length = length;
 		}
 	}
+
 }
